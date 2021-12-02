@@ -1,6 +1,6 @@
-Started GET "/" for 127.0.0.1 at 2021-12-01 19:59:54 -0300
+Started GET "/" for 127.0.0.1 at 2021-12-02 09:40:35 -0300
   
-ActiveRecord::NoDatabaseError (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  database "crypto_development" does not exist
+ActiveRecord::NoDatabaseError (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  database "crypto_wallet_development" does not exist
 ):
   
 activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
@@ -58,19 +58,19 @@ puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
 puma (5.5.2) lib/puma/server.rb:447:in `process_client'
 puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
-  [1m[35m (311.4ms)[0m  [1m[35mCREATE DATABASE "crypto_development" ENCODING = 'unicode'[0m
-  [1m[35m (172.3ms)[0m  [1m[35mCREATE DATABASE "crypto_test" ENCODING = 'unicode'[0m
-Started GET "/" for 127.0.0.1 at 2021-12-01 20:00:08 -0300
+  [1m[35m (299.1ms)[0m  [1m[35mCREATE DATABASE "crypto_wallet_development" ENCODING = 'unicode'[0m
+  [1m[35m (168.2ms)[0m  [1m[35mCREATE DATABASE "crypto_wallet_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2021-12-02 09:41:16 -0300
 Processing by Rails::WelcomeController#index as HTML
   Rendering /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.6ms | Allocations: 351)
-Completed 200 OK in 20ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3253)
+  Rendered /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 351)
+Completed 200 OK in 24ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3253)
 
 
-Started GET "/" for 127.0.0.1 at 2021-12-01 20:04:24 -0300
+Started GET "/" for 127.0.0.1 at 2021-12-02 09:57:17 -0300
 Processing by Rails::WelcomeController#index as HTML
   Rendering /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.4ms | Allocations: 351)
-Completed 200 OK in 29ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 2639)
+  Rendered /home/alex/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 351)
+Completed 200 OK in 17ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2639)
 
 
