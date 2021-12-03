@@ -1,0 +1,27 @@
+Started GET "/" for 127.0.0.1 at 2021-12-03 15:02:36 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 260)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/alex/ruby/2.6.5/crypto_wallet/public/packs-test
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 71099b143af79e3011eb
+Version: webpack 4.46.0
+Time: 1997ms
+Built at: 12/03/2021 3:02:47 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3b8f4a3bae35684cad51.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3b8f4a3bae35684cad51.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-3b8f4a3bae35684cad51.js js/application-3b8f4a3bae35684cad51.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 596 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 10659.3ms | Allocations: 108445)
+Completed 200 OK in 10739ms (Views: 10674.9ms | Allocations: 111304)
+Started GET "/assets/application-6d7617d54c4fd5a8dd5494a25e4f3669d8f95762bca9e52d2c913c91c0343e6b.css" for 127.0.0.1 at 2021-12-03 15:02:47 -0300

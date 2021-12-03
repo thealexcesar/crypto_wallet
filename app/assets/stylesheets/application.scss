@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap";
 @import "font-awesome";
 
@@ -28,6 +29,8 @@ a:hover {
 }
 
 header {
-  height: 20vh;
+  height: 10vh;
   width: 100vw;
 }
+
+body, .container, header {overflow-x:hidden;}

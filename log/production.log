@@ -19,3 +19,41 @@ I, [2021-12-03T09:38:34.521639 #9783]  INFO -- : [f940e43d-6b27-4d95-aac4-4af3a5
 F, [2021-12-03T09:38:34.522346 #9783] FATAL -- : [f940e43d-6b27-4d95-aac4-4af3a532591b]   
 [f940e43d-6b27-4d95-aac4-4af3a532591b] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
 [f940e43d-6b27-4d95-aac4-4af3a532591b]   
+I, [2021-12-03T14:49:18.758440 #21127]  INFO -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f] Started GET "/" for 127.0.0.1 at 2021-12-03 14:49:18 -0300
+I, [2021-12-03T14:49:18.763272 #21127]  INFO -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f] Processing by HomeController#index as HTML
+I, [2021-12-03T14:49:18.789262 #21127]  INFO -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]   Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 139)
+I, [2021-12-03T14:49:18.793310 #21127]  INFO -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]   Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 735)
+I, [2021-12-03T14:49:18.794345 #21127]  INFO -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f] Completed 500 Internal Server Error in 30ms (Allocations: 1974)
+F, [2021-12-03T14:49:18.798216 #21127] FATAL -- : [544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]   
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]      6:     <%= csrf_meta_tags %>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]      7:     <%= csp_meta_tag %>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]      8: 
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]      9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]     10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]     11:     <%= favicon_link_tag asset_path("hive-brands.svg"), class: 'color-icon' %>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]     12:   </head>
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f]   
+[544fbfb6-9c7e-4c46-8b0e-e24e6c07b23f] app/views/layouts/application.html.erb:9
+I, [2021-12-03T14:49:19.054650 #21127]  INFO -- : [584e1c46-c71d-48fd-906b-f266b7f5e262] Started GET "/favicon.ico" for 127.0.0.1 at 2021-12-03 14:49:19 -0300
+F, [2021-12-03T14:49:19.056236 #21127] FATAL -- : [584e1c46-c71d-48fd-906b-f266b7f5e262]   
+[584e1c46-c71d-48fd-906b-f266b7f5e262] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[584e1c46-c71d-48fd-906b-f266b7f5e262]   
+I, [2021-12-03T15:03:05.248434 #23057]  INFO -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e] Started GET "/" for 127.0.0.1 at 2021-12-03 15:03:05 -0300
+I, [2021-12-03T15:03:05.251796 #23057]  INFO -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e] Processing by HomeController#index as HTML
+I, [2021-12-03T15:03:05.263534 #23057]  INFO -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e]   Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 161)
+I, [2021-12-03T15:03:05.266101 #23057]  INFO -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e]   Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 757)
+I, [2021-12-03T15:03:05.266665 #23057]  INFO -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e] Completed 500 Internal Server Error in 15ms (Allocations: 2599)
+F, [2021-12-03T15:03:05.268638 #23057] FATAL -- : [fa62627c-7ae0-4afd-a183-58bc24d5390e]   
+[fa62627c-7ae0-4afd-a183-58bc24d5390e] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]      6:     <%= csrf_meta_tags %>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]      7:     <%= csp_meta_tag %>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]      8: 
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]      9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]     10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]     11:     <%= favicon_link_tag asset_path("hive-brands.svg"), class: 'color-icon' %>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]     12:   </head>
+[fa62627c-7ae0-4afd-a183-58bc24d5390e]   
+[fa62627c-7ae0-4afd-a183-58bc24d5390e] app/views/layouts/application.html.erb:9
