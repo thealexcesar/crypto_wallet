@@ -1,0 +1,21 @@
+I, [2021-12-03T09:38:34.453184 #9783]  INFO -- : [15e4c0b9-4d06-4910-a110-d772234a09fe] Started GET "/" for 127.0.0.1 at 2021-12-03 09:38:34 -0300
+I, [2021-12-03T09:38:34.458461 #9783]  INFO -- : [15e4c0b9-4d06-4910-a110-d772234a09fe] Processing by HomeController#index as HTML
+I, [2021-12-03T09:38:34.469623 #9783]  INFO -- : [15e4c0b9-4d06-4910-a110-d772234a09fe]   Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 98)
+I, [2021-12-03T09:38:34.473093 #9783]  INFO -- : [15e4c0b9-4d06-4910-a110-d772234a09fe]   Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 602)
+I, [2021-12-03T09:38:34.473555 #9783]  INFO -- : [15e4c0b9-4d06-4910-a110-d772234a09fe] Completed 500 Internal Server Error in 15ms (Allocations: 1841)
+F, [2021-12-03T09:38:34.476551 #9783] FATAL -- : [15e4c0b9-4d06-4910-a110-d772234a09fe]   
+[15e4c0b9-4d06-4910-a110-d772234a09fe] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[15e4c0b9-4d06-4910-a110-d772234a09fe]      6:     <%= csrf_meta_tags %>
+[15e4c0b9-4d06-4910-a110-d772234a09fe]      7:     <%= csp_meta_tag %>
+[15e4c0b9-4d06-4910-a110-d772234a09fe]      8: 
+[15e4c0b9-4d06-4910-a110-d772234a09fe]      9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[15e4c0b9-4d06-4910-a110-d772234a09fe]     10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+[15e4c0b9-4d06-4910-a110-d772234a09fe]     11:   </head>
+[15e4c0b9-4d06-4910-a110-d772234a09fe]     12: 
+[15e4c0b9-4d06-4910-a110-d772234a09fe]   
+[15e4c0b9-4d06-4910-a110-d772234a09fe] app/views/layouts/application.html.erb:9
+I, [2021-12-03T09:38:34.521639 #9783]  INFO -- : [f940e43d-6b27-4d95-aac4-4af3a532591b] Started GET "/favicon.ico" for 127.0.0.1 at 2021-12-03 09:38:34 -0300
+F, [2021-12-03T09:38:34.522346 #9783] FATAL -- : [f940e43d-6b27-4d95-aac4-4af3a532591b]   
+[f940e43d-6b27-4d95-aac4-4af3a532591b] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[f940e43d-6b27-4d95-aac4-4af3a532591b]   

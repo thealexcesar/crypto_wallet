@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import "font-awesome";
+
+a, ul, li {
+  list-style: none;
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(59, 59, 59, 0.7);
+}

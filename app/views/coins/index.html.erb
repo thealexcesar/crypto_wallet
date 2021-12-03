@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Coins</h1>
 
 <table>
@@ -17,7 +16,7 @@
       <tr>
         <td><%= coin.description %></td>
         <td><%= coin.acromym %></td>
-        <td><%= coin.url_image %></td>
+        <td><%= image_tag coin.url_image, height:'25', width:'25' %></td>
         <td><%= link_to 'Show', coin %></td>
         <td><%= link_to 'Edit', edit_coin_path(coin) %></td>
         <td><%= link_to 'Destroy', coin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,7 +24,5 @@
     <% end %>
   </tbody>
 </table>
-
+<i class="fab fa-ethereum"></i>
 <br>
-
-<%= link_to 'New Coin', new_coin_path %>
