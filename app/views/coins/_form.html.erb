@@ -10,23 +10,21 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="container border rounded shadow">
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class: 'rounded', placeholder:'test' %>
   </div>
 
   <div class="field">
-    <%= form.label :acromym %>
-    <%= form.text_field :acromym %>
+    <%= form.text_field :acromym, class: 'rounded', placeholder:'test' %>
   </div>
 
   <div class="field">
-    <%= form.label :url_image %>
-    <%= form.text_field :url_image %>
+    <%= form.text_field :url_image, class: 'rounded', placeholder:'test' %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
+  </div>
   </div>
 <% end %>
