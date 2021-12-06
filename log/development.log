@@ -31978,3 +31978,42 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 8179)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-06 10:05:16 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 477)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/alex/ruby/2.6.5/crypto_wallet/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: 490985bde62a4dcccbc9
+Version: webpack 4.46.0
+Time: 792ms
+Built at: 12/06/2021 10:05:22 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-59156493c7307ed82fac.js    125 KiB  application  [emitted] [immutable]  application
+js/application-59156493c7307ed82fac.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-59156493c7307ed82fac.js js/application-59156493c7307ed82fac.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 596 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6160.8ms | Allocations: 174355)
+Completed 200 OK in 6193ms (Views: 6167.0ms | ActiveRecord: 0.0ms | Allocations: 181394)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-06 10:05:59 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7692)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 8260)
+
+
