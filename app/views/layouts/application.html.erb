@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Crypto Wallet</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Crypto Wallet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= favicon_link_tag asset_path("hive-brands.svg"), class: 'color-icon' %>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path("hive-brands.svg"), class: 'color-icon' %>
-  </head>
-
-  <body>
-    <header class="d-flex justify-content-around align-items-center text-center bg-light shadow">
-      <%= link_to 'Crypto Wallet',root_path %>
-      <h1 class="h4">Cryptocurrency Page</h1>
-      <ul class="d-flex justify-content-between">
-        <li class="d-flex align-items-center mt-3">
-          <%= link_to coins_url do %>
-            <button class="btn btn-primary ">Coin registration</button>
-          <% end %>
-        </li>
-      </ul>
-    </header>
-    <%= yield %>
-  </body>
+<body">
+<header class="d-flex justify-content-around align-items-center text-center bg-light shadow">
+  <%= link_to 'Crypto Wallet',root_path %>
+  <h1 class="h4">Cryptocurrency Page</h1>
+  <ul class="d-flex justify-content-between">
+    <li class="d-flex align-items-center mt-3">
+      <%#= link_to coins_url do %>
+        <button class="btn btn-primary ">Coin registration</button>
+      <%# end %>
+    </li>
+  </ul>
+</header>
+<%= yield %>
+</body>
 </html>
