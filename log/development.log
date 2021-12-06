@@ -648,3 +648,204 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 10.7ms | Allocations: 14249)
 
 
+Started GET "/coins/new" for 127.0.0.1 at 2021-12-06 15:44:53 -0300
+Processing by CoinsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 15.4ms | Allocations: 6515)
+  Rendered coins/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 6876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 14469)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 15039)
+
+
+Started POST "/coins" for 127.0.0.1 at 2021-12-06 15:46:06 -0300
+Processing by CoinsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Ethereum", "acronym"=>"ETH", "url_image"=>"https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"}, "commit"=>"Create Coin"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+  [1m[36mCoin Create (1.3ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-06 18:46:06.928837"], ["updated_at", "2021-12-06 18:46:06.928837"]]
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/coins/2
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms | Allocations: 2971)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-06 15:46:06 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 7937)
+Completed 200 OK in 30ms (Views: 13.9ms | ActiveRecord: 3.0ms | Allocations: 11741)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-06 15:46:10 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:17
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1388)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 9078)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 1.5ms | Allocations: 9505)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2021-12-06 15:46:48 -0300
+Processing by CoinsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 1.8ms | Allocations: 468)
+  Rendered coins/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 8273)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 8704)
+
+
+Started POST "/coins" for 127.0.0.1 at 2021-12-06 15:47:05 -0300
+Processing by CoinsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Axie Infinity", "acronym"=>"AXS", "url_image"=>"https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"}, "commit"=>"Create Coin"}
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+  [1m[36mCoin Create (1.8ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Axie Infinity"], ["acronym", "AXS"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-06 18:47:05.217545"], ["updated_at", "2021-12-06 18:47:05.217545"]]
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/coins/3
+Completed 302 Found in 15ms (ActiveRecord: 5.9ms | Allocations: 2722)
+
+
+Started GET "/coins/3" for 127.0.0.1 at 2021-12-06 15:47:05 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCoin Load (1.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 7797)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 1.0ms | Allocations: 8938)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-06 15:47:06 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:17
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 9311)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 1.0ms | Allocations: 9738)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-06 15:47:45 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.9ms | Allocations: 531)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 810)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 8500)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 1.2ms | Allocations: 9768)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2021-12-06 15:47:48 -0300
+Processing by CoinsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Ethereum", "acronym"=>"ETH", "url_image"=>"https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"}, "commit"=>"Update Coin", "id"=>"2"}
+  [1m[36mCoin Load (1.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:40:in `block in update'
+  [1m[36mCoin Update (2.0ms)[0m  [1m[33mUPDATE "coins" SET "url_image" = $1, "updated_at" = $2 WHERE "coins"."id" = $3[0m  [["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"], ["updated_at", "2021-12-06 18:47:48.159443"], ["id", 2]]
+  ↳ app/controllers/coins_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/coins/2
+Completed 302 Found in 15ms (ActiveRecord: 6.0ms | Allocations: 3359)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-06 15:47:48 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7799)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 1.8ms | Allocations: 8941)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-06 15:47:49 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:17
+  Rendered coins/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 9312)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 1.9ms | Allocations: 9738)
+
+
+Started GET "/coins/3/edit" for 127.0.0.1 at 2021-12-06 15:48:00 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 1.4ms | Allocations: 501)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8332)
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 1.8ms | Allocations: 9470)
+
+
+Started PATCH "/coins/3" for 127.0.0.1 at 2021-12-06 15:48:01 -0300
+Processing by CoinsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Axie Infinity", "acronym"=>"AXS", "url_image"=>"https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"}, "commit"=>"Update Coin", "id"=>"3"}
+  [1m[36mCoin Load (1.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+Redirected to http://127.0.0.1:3000/coins/3
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms | Allocations: 1273)
+
+
+Started GET "/coins/3" for 127.0.0.1 at 2021-12-06 15:48:01 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:62:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 7797)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 1.2ms | Allocations: 8939)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-06 15:48:03 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:17
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 9310)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 1.2ms | Allocations: 9736)
+
+
+  [1m[36mCoin Load (0.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
