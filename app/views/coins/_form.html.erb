@@ -1,0 +1,30 @@
+<%= form_with(model: coin, locals: true) do |f| %>
+  <% if coin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
+
+      <ul>
+        <% coin.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="container">
+    <div class="">
+      <%= f.text_field :coin_name, class: 'rounded', placeholder:'Crypto ex: Bitcoin' %>
+    </div>
+
+    <div class="">
+      <%= f.text_field :acronym, class: 'rounded', placeholder:'Acronym ex: BTC' %>
+    </div>
+
+    <div class="w-100">
+      <%= f.text_field :url_image, class: 'rounded', placeholder:'url image ex: https://example.google.coin-4720.png' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
