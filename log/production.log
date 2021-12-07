@@ -1,0 +1,21 @@
+I, [2021-12-06T16:48:28.054944 #39062]  INFO -- : [c96431bf-31f1-443c-9e15-2be24da7c7be] Started GET "/" for 127.0.0.1 at 2021-12-06 16:48:28 -0300
+I, [2021-12-06T16:48:28.067083 #39062]  INFO -- : [c96431bf-31f1-443c-9e15-2be24da7c7be] Processing by HomeController#index as HTML
+I, [2021-12-06T16:48:28.093857 #39062]  INFO -- : [c96431bf-31f1-443c-9e15-2be24da7c7be]   Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 175)
+I, [2021-12-06T16:48:28.102903 #39062]  INFO -- : [c96431bf-31f1-443c-9e15-2be24da7c7be]   Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 760)
+I, [2021-12-06T16:48:28.103695 #39062]  INFO -- : [c96431bf-31f1-443c-9e15-2be24da7c7be] Completed 500 Internal Server Error in 36ms (Allocations: 2013)
+F, [2021-12-06T16:48:28.109152 #39062] FATAL -- : [c96431bf-31f1-443c-9e15-2be24da7c7be]   
+[c96431bf-31f1-443c-9e15-2be24da7c7be] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+[c96431bf-31f1-443c-9e15-2be24da7c7be]      5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+[c96431bf-31f1-443c-9e15-2be24da7c7be]      6:   <%= csrf_meta_tags %>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]      7:   <%= csp_meta_tag %>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]      8:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]      9:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]     10:   <%= favicon_link_tag asset_path("hive-brands.svg"), class: 'color-icon' %>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]     11: </head>
+[c96431bf-31f1-443c-9e15-2be24da7c7be]   
+[c96431bf-31f1-443c-9e15-2be24da7c7be] app/views/layouts/application.html.erb:8
+I, [2021-12-06T16:48:28.246351 #39062]  INFO -- : [f9b1f005-87ce-4f89-b3a6-e5563df883bb] Started GET "/favicon.ico" for 127.0.0.1 at 2021-12-06 16:48:28 -0300
+F, [2021-12-06T16:48:28.248315 #39062] FATAL -- : [f9b1f005-87ce-4f89-b3a6-e5563df883bb]   
+[f9b1f005-87ce-4f89-b3a6-e5563df883bb] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[f9b1f005-87ce-4f89-b3a6-e5563df883bb]   
