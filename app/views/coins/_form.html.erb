@@ -1,4 +1,4 @@
-<%= form_with(model: coin, locals: true) do |f| %>
+<%= form_with(model: coin, local: true) do |f| %>
   <% if coin.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
@@ -15,12 +15,17 @@
       <%= f.text_field :coin_name, class: 'rounded', placeholder:'Crypto ex: Bitcoin' %>
     </div>
 
-    <div class="">
+    <div class="my-2">
       <%= f.text_field :acronym, class: 'rounded', placeholder:'Acronym ex: BTC' %>
     </div>
 
     <div class="w-100">
       <%= f.text_field :url_image, class: 'rounded', placeholder:'url image ex: https://example.google.coin-4720.png' %>
+    </div>
+
+    <div class=" my-2 w-25 d-flex flex-column">
+      <%= f.label :mining_id %>
+      <%= f.select "mining_id", @mining_type, include_blank:'select' %>
     </div>
 
     <div class="actions">

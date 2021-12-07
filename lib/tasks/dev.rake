@@ -2,9 +2,9 @@ namespace :dev do
   desc "Configura o ambiente de desenvolvimento"
   task setup: :environment do # Yield.
     if Rails.env.development?
-      show_spinner("deletando"){   %x(rails db:drop)}
-      show_spinner("criando  "){ %x(rails db:create)}
-      show_spinner("migrando "){%x(rails db:migrate)}
+      show_spinner("deletando\t"){ %x(rails db:drop) }
+      show_spinner("criando\t") { %x(rails db:create)}
+      show_spinner("migrando\t"){%x(rails db:migrate)}
       %x(rails dev:mining)
       %x(rails dev:coin)
     else
@@ -14,7 +14,7 @@ namespace :dev do
 
   desc "Cadastra as moedas"
   task coin: :environment do
-    show_spinner("Cadastrando moedas") do
+    show_spinner("cadastro moedas") do
       coins = [
         {
           coin_name:"Bitcoin", acronym:"BTC",
@@ -62,7 +62,7 @@ namespace :dev do
 
   desc "Cadastra os tipos de mineracao"
   task mining: :environment do
-    show_spinner("Cadastrando tipos de mineracao") do
+    show_spinner( "Cadastro tipo mineracao") do
       minings = [
         {description: "Proof of Work", acronym: "PoW"},
         {description: "Proof of Stake", acronym: "PoS"},
@@ -74,7 +74,7 @@ namespace :dev do
 
   private
   def show_spinner(msg, msg_end = "sucesso.")
-    spinner = TTY::Spinner.new("[:spinner] #{msg} db... ")
+    spinner = TTY::Spinner.new("[:spinner] #{msg}")
     spinner.auto_spin
     yield
     spinner.success(msg_end)
