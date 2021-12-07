@@ -1,7 +1,11 @@
 <p id="notice"><%= notice %></p>
-<div class="h4 mt-5 px-3 pt-2 container border d-flex justify-content-between">
-  <h2 class="h5">Coins</h2>
-  <h2><%= link_to 'New coin', new_coin_path, class:'h5' %></h2>
+<div class="h4 mt-5 p-2 container border d-flex justify-content-between">
+  <%= link_to minings_path do %>
+    <button class="btn btn-dark ">Mining Types</button>
+  <% end %>
+  <%= link_to new_coin_path do %>
+    <button class="btn btn-dark ">New Coin</button>
+  <% end %>
 </div>
 <table class="container table shadow table-striped table-hover border rounded shadow">
   <thead>

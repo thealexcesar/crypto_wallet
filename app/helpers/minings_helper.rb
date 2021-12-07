@@ -1,0 +1,2 @@
+module MiningsHelper
+end

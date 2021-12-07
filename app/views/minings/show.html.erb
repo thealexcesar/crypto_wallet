@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mining.description %>
+</p>
+
+<p>
+  <strong>Acronym:</strong>
+  <%= @mining.acronym %>
+</p>
+
+<%= link_to 'Edit', edit_mining_path(@mining) %> |
+<%= link_to 'Back', minings_path %>

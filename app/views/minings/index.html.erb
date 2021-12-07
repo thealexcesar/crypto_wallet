@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Minings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Acronym</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @minings.each do |mining| %>
+      <tr>
+        <td><%= mining.description %></td>
+        <td><%= mining.acronym %></td>
+        <td><%= link_to 'Show', mining %></td>
+        <td><%= link_to 'Edit', edit_mining_path(mining) %></td>
+        <td><%= link_to 'Destroy', mining, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mining', new_mining_path %>
