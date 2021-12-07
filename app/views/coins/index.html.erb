@@ -13,19 +13,21 @@
     <th>Coin</th>
     <th>Acronym</th>
     <th>Image</th>
-    <th colspan="2"></th>
+    <th class="text-center">options</th>
   </tr>
   </thead>
 
   <tbody>
-  <% @coins.each do |coin| %>
+  <% @coins.each do |c| %>
     <tr>
-      <td><%= coin.coin_name %></td>
-      <td><%= coin.acronym %></td>
-      <td><%= image_tag coin.url_image, size:'35x35' %></td>
-      <td><%= link_to fa_icon('eye'), coin, class:'btn bg-primary' %></td>
-      <td><%= link_to fa_icon('edit'), edit_coin_path(coin), class:'btn bg-warning' %></td>
-      <td><%= link_to fa_icon('trash'), coin, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn bg-danger' %></td>
+      <td><%= c.coin_name %></td>
+      <td><%= c.acronym %></td>
+      <td><%= image_tag c.url_image, size:'35x35' %></td>
+      <td class="d-flex justify-content-around">
+        <%= link_to fa_icon('eye'), c, class:'btn bg-primary' %>
+        <%= link_to fa_icon('edit'), edit_coin_path(c), class:'btn bg-warning' %>
+        <%= link_to fa_icon('trash'), c, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn bg-danger' %>
+      </td>
     </tr>
   <% end %>
   </tbody>
