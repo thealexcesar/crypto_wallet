@@ -2950,3 +2950,231 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 1.9ms | Allocations: 10599)
 
 
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (46.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_development"[0m
+  [1m[35m (26.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_test"[0m
+  [1m[35m (332.4ms)[0m  [1m[35mCREATE DATABASE "crypto_development" ENCODING = 'unicode'[0m
+  [1m[35m (181.4ms)[0m  [1m[35mCREATE DATABASE "crypto_test" ENCODING = 'unicode'[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7764686539811591670)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCoins (20211206180600)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "coins" ("id" bigserial primary key, "coin_name" character varying, "acronym" character varying, "url_image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211206180600"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMinings (20211207142804)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "minings" ("id" bigserial primary key, "description" character varying, "acronym" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207142804"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-12-07 16:19:34.291846"], ["updated_at", "2021-12-07 16:19:34.291846"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7764686539811591670)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-12-07 13:19:50 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1002.1ms | Allocations: 31562)
+Completed 200 OK in 1023ms (Views: 1006.9ms | ActiveRecord: 0.0ms | Allocations: 34425)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-07 13:19:59 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:21
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9343)
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 1.9ms | Allocations: 10636)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5009.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_development"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "crypto_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE "crypto_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7764686539811591670)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7764686539811591670)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/coins" for 127.0.0.1 at 2021-12-07 13:21:55 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:21
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 8917)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.9ms | Allocations: 9807)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-07 13:22:04 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:21
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.9ms | Allocations: 20920)
+Completed 200 OK in 98ms (Views: 76.6ms | ActiveRecord: 1.7ms | Allocations: 24076)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 13:22:22 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 19927)
+Completed 200 OK in 105ms (Views: 84.2ms | ActiveRecord: 0.0ms | Allocations: 22791)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-07 13:22:24 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:21
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9343)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 1.4ms | Allocations: 10636)
+
+
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" ORDER BY "coins"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" ORDER BY "coins"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (23.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_development"[0m
+  [1m[35m (27.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_test"[0m
+  [1m[35m (178.6ms)[0m  [1m[35mCREATE DATABASE "crypto_development" ENCODING = 'unicode'[0m
+  [1m[35m (167.0ms)[0m  [1m[35mCREATE DATABASE "crypto_test" ENCODING = 'unicode'[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7764686539811591670)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCoins (20211206180600)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "coins" ("id" bigserial primary key, "coin_name" character varying, "acronym" character varying, "url_image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211206180600"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMinings (20211207142804)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "minings" ("id" bigserial primary key, "description" character varying, "acronym" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207142804"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-12-07 16:35:50.324348"], ["updated_at", "2021-12-07 16:35:50.324348"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7764686539811591670)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCoin Load (0.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbitcoin%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (1.1ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbitcoin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.696743"], ["updated_at", "2021-12-07 16:36:08.696743"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.5ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.706694"], ["updated_at", "2021-12-07 16:36:08.706694"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Binance Coin"], ["acronym", "BNB"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.4ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Binance Coin"], ["acronym", "BNB"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.713290"], ["updated_at", "2021-12-07 16:36:08.713290"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Tether"], ["acronym", "USDT"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Ftether%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.4ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Tether"], ["acronym", "USDT"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Ftether%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.721607"], ["updated_at", "2021-12-07 16:36:08.721607"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Solana"], ["acronym", "SOL"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fsolana%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.5ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Solana"], ["acronym", "SOL"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fsolana%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.729504"], ["updated_at", "2021-12-07 16:36:08.729504"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Cardano"], ["acronym", "ADA"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fcardano%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.5ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Cardano"], ["acronym", "ADA"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fcardano%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.739543"], ["updated_at", "2021-12-07 16:36:08.739543"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "USD Coin"], ["acronym", "USDC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fusd-coin%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.4ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "USD Coin"], ["acronym", "USDC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fusd-coin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.749062"], ["updated_at", "2021-12-07 16:36:08.749062"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 LIMIT $4[0m  [["coin_name", "Axie Infinity"], ["acronym", "AXS"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.3ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["coin_name", "Axie Infinity"], ["acronym", "AXS"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-07 16:36:08.755392"], ["updated_at", "2021-12-07 16:36:08.755392"]]
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:45:in `block (4 levels) in <main>'
+Started GET "/coins" for 127.0.0.1 at 2021-12-07 13:36:41 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:21
+  Rendered coins/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 7695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.3ms | Allocations: 27276)
+Completed 200 OK in 121ms (Views: 89.8ms | ActiveRecord: 13.0ms | Allocations: 30432)
+
+
