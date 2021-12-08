@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= head_title %></title>
+  <title><%= t'title' %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -13,7 +13,7 @@
 <body>
 <header class="d-flex justify-content-around align-items-center text-center bg-light shadow">
   <%= link_to t('home'),root_path %>
-  <h1 class="h4 d-lg-block d-md-block d-none"><%= t'crypto' %></h1>
+  <h1 class="h4 d-lg-block d-md-block d-none"><%= t'greet' %></h1>
   <ul class="d-flex justify-content-between">
     <li class="d-flex align-items-center mt-3">
       <%= link_to coins_url do %>
@@ -21,9 +21,17 @@
       <% end %>
     </li>
   </ul>
-  <%= link_to root_path do %>
-    <%= translate %>
-    <%= fa_icon('language') %>
+  <% if I18n.locale == :en %>
+    <%#= link_to '/?locale=en' do %> <!-- or -->
+    <%= link_to root_path(locale: 'pt-BR') do %>
+      Português
+      <%= fa_icon('language') %>
+    <% end %>
+  <% else %>
+    <%= link_to root_path(locale: 'en') do %>
+      English
+      <%= fa_icon('language') %>
+    <% end %>
   <% end %>
 </header>
 <%= yield %>

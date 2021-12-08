@@ -1,0 +1,29 @@
+Started GET "/?locale=en" for 127.0.0.1 at 2021-12-08 18:33:02 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 240)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/alex/ruby/2.6.5/crypto/public/packs-test
+[Webpacker] warning package.json: "crypto" is also the name of a node core module
+warning ../../../package.json: No license field
+
+[Webpacker] Hash: 71099b143af79e3011eb
+Version: webpack 4.46.0
+Time: 2288ms
+Built at: 12/08/2021 6:33:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3b8f4a3bae35684cad51.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3b8f4a3bae35684cad51.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-3b8f4a3bae35684cad51.js js/application-3b8f4a3bae35684cad51.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 596 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8767.7ms | Allocations: 118429)
+Completed 200 OK in 8816ms (Views: 8776.4ms | Allocations: 121432)
+Started GET "/assets/application-334ba3ea328d52f67cbd4115a2816e34de201cfebc48554b66d81dca05d91e94.css" for 127.0.0.1 at 2021-12-08 18:33:11 -0300

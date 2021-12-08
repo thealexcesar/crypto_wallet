@@ -1,6 +1,6 @@
-<h1>Editing Mining</h1>
+<h1><%= t'links.edit' %></h1>
 
 <%= render 'form', mining: @mining %>
 
-<%= link_to 'Show', @mining %> |
-<%= link_to 'Back', minings_path %>
+<%= link_to (t'links.show'), @mining %> |
+<%= link_to (t'links.back'), minings_path %>

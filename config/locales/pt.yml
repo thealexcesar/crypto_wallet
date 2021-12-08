@@ -1,25 +1,55 @@
 pt-BR:
-  hello: "Ola mundo!"
-  crypto: "Página Cripto"
-  coins: 'Moedas'
-  minings: 'Tipos de Mineração'
+  greet: Bem vindo ao Crypto Wallet!
+  crypto: Página Cripto
+  coins: Moedas
+  minings: Tipos de Mineração
   coin:
-    new_coin: 'Nova Moeda'
-    new_mining: 'Novo Tipo de Mineração'
-    name: 'Nome'
-    acronym: 'Sigla'
-    image: 'Imagem'
-    option: 'Opções'
-    mining_type: 'Tipo de Mineração'
-    select: 'selecione'
-    save: 'salvar'
+    new_coin: Nova Moeda
+    new_mining: Novo Tipo de Mineração
+    name: Nome
+    acronym: Sigla
+    image: Imagem
+    option: Opções
+    mining_type: Tipo de Mineração
+    select: selecione
+    save: salvar
 
-  home: 'Carteira cripto'
+  home: Carteira cripto
   links:
-    back: 'Voltar'
-    edit: "Editar"
-    show: "Mostrar"
-    delete: "Apagar"
+    back: Voltar
+    edit: Editar
+    show: Mostrar
+    delete: Apagar
 
   message:
-    confirm: 'Certeza que quer deletar?'
+    confirm: Certeza que quer deletar?
+
+  # home/index.html.erb
+  header1: 'O que é uma carteira de criptomoeda?'
+  p_header: Uma carteira de criptomoeda é um aplicativo que permite que os usuários armazenem e recuperem seus ativos digitais.
+    Tal como acontece com a moeda convencional, você não precisa de uma carteira para gastar seu dinheiro, mas certamente ajuda a mantê-lo
+    Em um lugar. Quando um usuário adquire criptomoeda, como bitcoins, ele pode armazená-la em uma carteira de criptomoeda
+    e de lá usá-lo para fazer transações.
+  header2: Aprofundando mais na definição
+  p_1: Carteiras de criptomoeda são aplicativos exatamente como aqueles que você executa em um smartphone ou computador.
+    Se você preferir a experiência tátil de segurar uma carteira, você também pode comprar um dispositivo físico que
+    executa um aplicativo de carteira.
+  p_2: A primeira carteira de criptomoeda foi apresentada por Satoshi Nakamoto quando ele lançou o protocolo bitcoin pela
+    primeira vez em 2009. Bitcoin é a criptomoeda mais popular e amplamente usada, mas surgiram outras baseadas em sua
+    tecnologia blockchain, e qualquer um deles pode ser armazenado em uma carteira de criptomoeda . As carteiras podem
+    conter várias criptomoedas.
+  p_3: Quando você deseja adquirir criptomoeda, seja comprando em uma casa de câmbio ou recebendo como um presente ou como
+    receita, você direciona o remetente para um endereço criptográfico exclusivo emitido pela carteira. Você pode imaginar o
+    seu criptomoeda armazenada na carteira da mesma forma que os arquivos são armazenados em uma unidade USB, mas, na verdade,
+    as informações armazenadas na carteira apenas aponta para a localização do seu dinheiro no blockchain, o livro-razão
+    público que registra e autenticatodas as transações para uma criptomoeda. Gastar com a carteira é tão simples quanto
+    escanear o código QR de um varejista oudirecionar uma quantidade específica de criptomoedas para o endereço público do varejista.
+  p_4: Alguns economistas alertam que a criptomoeda pode ser um péssimo investimento. Você pode se sair melhor usando o
+    Bankrate's comparação das taxas de investimento.
+  header3: Exemplo de carteira de criptomoeda
+  p_5: Com o 112º aniversário de Bilbo, Frodo quer enviar-lhe algum dinheiro. Ele decide enviar bitcoin, que tem apreciado
+    em valor. Bilbo tem um aplicativo de carteira de criptomoedas em seu Apple Watch e dá a Frodo o endereço público. Este
+    após 22 de setembro, Frodo envia um bitcoin para o endereço público. Uma vez que a transação é autenticada no
+    blockchain, Bilbo se torna o dono do bitcoin. Mais tarde, Bilbo quer reservar um vôo para Gondor. Seu agente de viagens
+    aceita bitcoin e direciona uma quantia precisa de sua carteira de bitcoin para o agente de viagens e recebe um avião
+    bilhete de volta.

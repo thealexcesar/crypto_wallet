@@ -1,5 +1,3 @@
 class HomeController < ApplicationController
-  def index
-    @test_calling_params = params[:nome]
-  end
+  def index;end
 end

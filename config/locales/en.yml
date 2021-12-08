@@ -1,36 +1,33 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  header1: 'What is a cryptocurrency wallet?'
+  p_header: A cryptocurrency wallet is an app that allows cryptocurrency users to store and retrieve their digital assets.
+    As with conventional currency, you don’t need a wallet to spend your cash, but it certainly helps to keep it all
+    in one place. When a user acquires cryptocurrency, such as bitcoins, she can store it in a cryptocurrency wallet
+    and from there use it to make transactions.
+  header2: Deeper definition
+  p_1: Cryptocurrency wallets are apps just like those you might run on a smartphone or computer. If you prefer the
+    tactile experience of holding a wallet, you can also buy a physical device that runs a wallet app.
+  p_2: The first cryptocurrency wallet was introduced by Satoshi Nakamoto when he first released the bitcoin protocol in
+    2009. Bitcoin is the most popular and widely used cryptocurrency, but others building upon its blockchain technology
+    have emerged, and any of them can be stored on a cryptocurrency wallet. Wallets can hold multiple cryptocurrencies.
+  p_3: When you want to acquire cryptocurrency, whether by purchasing it in a currency exchange or receiving it as a gift
+    or as revenue, you direct the sender to a unique cryptographic address issued by the wallet. You might picture your
+    cryptocurrency stored on the wallet the same way files are stored on a USB drive, but, in fact, the information stored
+    on the wallet only points to your cash’s location on the blockchain, the public ledger that records and authenticates
+    all transactions for a cryptocurrency. Spending with the wallet is as simple as scanning a retailer’s QR code or
+    directing a specific amount of cryptocoins to the retailer’s public address.
+  p_4: Some economists warn that cryptocurrency makes for a lousy investment. You might be better off using Bankrate’s
+    comparison of investment rates.
+  header3: Cryptocurrency wallet example
+  p_5: Bilbo’s 112th birthday, Frodo wants to send him some money. He decides to send bitcoin, which has been appreciating
+    in value. Bilbo has a cryptocurrency wallet app on his Apple Watch, and he gives Frodo the public address. That
+    following September 22, Frodo sends one bitcoin to the public address. Once that transaction is authenticated on the
+    blockchain, Bilbo becomes the owner of the bitcoin. Later, Bilbo wants to book a flight to Gondor. His travel agent
+    accepts bitcoin, and he directs a precise amount from his bitcoin wallet to the travel agent and receives a plane
+    ticket in return.
+
+
+  greet: "Wellcome to the Crypto Wallet!"
   crypto: "Cryptocurrence Page"
   coins: 'Coins'
   minings: 'Mining Types'
@@ -55,3 +52,4 @@ en:
 
   message:
     confirm: 'Are you sure?'
+
