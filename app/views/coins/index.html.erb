@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 <div class="h4 mt-5 p-2 container border d-flex justify-content-between">
   <%= link_to minings_path do %>
-    <button class="btn btn-dark ">Mining Types</button>
+    <button class="btn btn-dark "><%= t'minings' %></button>
   <% end %>
   <%= link_to new_coin_path do %>
-    <button class="btn btn-dark ">New Coin</button>
+    <button class="btn btn-dark "><%= t'coin.new_coin' %></button>
   <% end %>
 </div>
 <table class="container table shadow table-striped table-hover border rounded shadow">
   <thead>
   <tr>
-    <th>Coin</th>
-    <th>Acronym</th>
-    <th>Image</th>
-    <th class="text-center">options</th>
+    <th><%= t'coin.name' %></th>
+    <th><%= t'coin.acronym' %></th>
+    <th><%= t'coin.image' %></th>
+    <th class="text-center"><%= t'coin.option' %></th>
   </tr>
   </thead>
 

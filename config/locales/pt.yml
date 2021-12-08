@@ -1,0 +1,21 @@
+pt-BR:
+  hello: "Ola mundo!"
+  crypto: "Página Cripto"
+  coins: 'Moedas'
+  minings: 'Tipos de Mineração'
+  coin:
+    new_coin: 'Nova Moeda'
+    new_mining: 'Novo Tipo de Mineração'
+    name: 'Nome'
+    acronym: 'Sigla'
+    image: 'Imagem'
+    option: 'Opções'
+    mining_type: 'Tipo de Mineração'
+    select: 'selecione'
+
+  home: 'Carteira cripto'
+  links:
+    back: 'Voltar'
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"

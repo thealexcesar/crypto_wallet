@@ -228,6 +228,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   font-awesome-rails (~> 4.7, >= 4.7.0.7)
+  i18n (~> 1.8, >= 1.8.11)
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.3)

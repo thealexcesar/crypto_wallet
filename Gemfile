@@ -28,7 +28,9 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# Spinner ---------------------------------------------------------
+# I18n
+gem 'i18n', '~> 1.8', '>= 1.8.11'
+
 gem "tty-spinner"
 
 group :development, :test do

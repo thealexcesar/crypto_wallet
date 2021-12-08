@@ -31,3 +31,23 @@
 
 en:
   hello: "Hello world"
+  crypto: "Cryptocurrence Page"
+  coins: 'Coins'
+  minings: 'Mining Types'
+  coin:
+    new_coin: 'New Coin'
+    new_mining: 'New Mining Type'
+    name: 'Name'
+    acronym: 'Acronym'
+    image: 'Image'
+    option: 'Options'
+    mining_type: 'Mining Type'
+    select: 'select'
+
+  home: 'Crypto Wallet'
+
+  links:
+    back: 'Back'
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"

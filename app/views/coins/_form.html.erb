@@ -24,8 +24,8 @@
     </div>
 
     <div class=" my-2 w-25 d-flex flex-column">
-      <%= f.label :mining_id %>
-      <%= f.select "mining_id", @mining_type, include_blank:'select' %>
+      <%= f.label t'coin.mining_type' %>
+      <%= f.select "mining_id", @mining_type, include_blank:(t'coin.select') %>
     </div>
 
     <div class="actions">

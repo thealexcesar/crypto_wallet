@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Coin name:</strong>
+  <strong><%= t'coin.name' %>:</strong>
   <%= @coin.coin_name %>
 </p>
 
 <p>
-  <strong>Acronym:</strong>
+  <strong><%= t'coin.acronym' %>:</strong>
   <%= @coin.acronym %>
 </p>
 <div>
@@ -16,5 +16,5 @@
   <%= @mining %>
 </div>
 
-<%= link_to 'Edit', edit_coin_path(@coin) %> |
-<%= link_to 'Back', coins_path %>
+<%= link_to (t('links.edit')), edit_coin_path(@coin) %> |
+<%= link_to (t'links.back'), coins_path %>

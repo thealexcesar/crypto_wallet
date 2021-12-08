@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Minings</h1>
+<h1><%= t'minings' %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Acronym</th>
+      <th><%= t'coin.name' %></th>
+      <th><%= t'coin.acronym' %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Mining', new_mining_path %>
+<%= link_to (t'coin.new_mining'), new_mining_path %>
