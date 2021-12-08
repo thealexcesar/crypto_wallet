@@ -1,8 +1,8 @@
 <div class="my-4 container-fluid d-flex justify-content-around m-2 text-danger opacity-50">
   <span> <%= where_am_i %> </span>
-  <span><%= current_locale(I18n.locale) %></span>
+  <span><%= current_locale %></span>
   <span><%= t('hello') %></span>
-<!--  <span><%#= I18n.l Time.now %></span>-->
+<!--  <span><%#= I18n.l(Date.time) %></span>-->
 </div>
 
 <h2 class="text-danger text-center"><%= @test_calling_params %></h2>

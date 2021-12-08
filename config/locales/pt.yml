@@ -12,6 +12,7 @@ pt-BR:
     option: 'Opções'
     mining_type: 'Tipo de Mineração'
     select: 'selecione'
+    save: 'salvar'
 
   home: 'Carteira cripto'
   links:

@@ -43,6 +43,7 @@ en:
     option: 'Options'
     mining_type: 'Mining Type'
     select: 'select'
+    create: 'save'
 
   home: 'Crypto Wallet'
 

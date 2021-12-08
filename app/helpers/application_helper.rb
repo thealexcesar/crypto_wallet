@@ -1,13 +1,13 @@
 module ApplicationHelper
-  def head(any)
+  def head_title
     I18n.locale == :en ? 'crypto Wallet' : 'Carteira Cripto'
   end
 
-  def current_locale(void)
+  def current_locale
     I18n.locale == :en ? 'United States' : 'Brasil'
   end
 
-  def translate(switch)
+  def translate
     I18n.locale == :en ? 'translate to english' : 'traduzir para inglês'
   end
 

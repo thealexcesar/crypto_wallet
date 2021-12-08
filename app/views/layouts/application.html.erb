@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= head I18n.locale %></title>
+  <title><%= head_title %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -22,7 +22,7 @@
     </li>
   </ul>
   <%= link_to root_path do %>
-    <%= translate I18n.locale %>
+    <%= translate %>
     <%= fa_icon('language') %>
   <% end %>
 </header>
