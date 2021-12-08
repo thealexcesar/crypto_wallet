@@ -10,7 +10,7 @@
 <table class="container table shadow table-striped table-hover border rounded shadow">
   <thead>
   <tr>
-    <th><%= t'coin.name' %></th>
+    <th><%= Coin.human_attribute_name(:coin_name) %></th>
     <th><%= t'coin.acronym' %></th>
     <th><%= t'coin.image' %></th>
     <th class="text-center"><%= t'coin.option' %></th>
@@ -26,7 +26,7 @@
       <td class="d-flex justify-content-around">
         <%= link_to fa_icon('eye'), c, class:'btn bg-primary' %>
         <%= link_to fa_icon('edit'), edit_coin_path(c), class:'btn bg-warning' %>
-        <%= link_to fa_icon('trash'), c, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn bg-danger' %>
+        <%= link_to fa_icon('trash'), c, method: :delete, data: { confirm: (t'message.confirm') }, class:'btn bg-danger' %>
       </td>
     </tr>
   <% end %>

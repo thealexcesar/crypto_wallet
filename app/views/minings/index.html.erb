@@ -18,7 +18,7 @@
         <td><%= mining.acronym %></td>
         <td><%= link_to 'Show', mining %></td>
         <td><%= link_to 'Edit', edit_mining_path(mining) %></td>
-        <td><%= link_to 'Destroy', mining, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', mining, method: :delete, data: { confirm: (t'message.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -20,3 +20,6 @@ pt-BR:
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+
+  message:
+    confirm: 'Certeza que quer deletar?'

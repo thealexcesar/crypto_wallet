@@ -1,5 +1,6 @@
 class MiningsController < ApplicationController
   before_action :set_mining, only: %i[ show edit update destroy ]
+  before_action :set_coins_used, except: [:destroy]
 
   # GET /minings or /minings.json
   def index
@@ -57,13 +58,18 @@ class MiningsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_mining
-      @mining = Mining.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_mining
+    @mining = Mining.find(params[:id])
+    @coin = Mining.find(params[:id]).coin.coin_name
+  end
 
-    # Only allow a list of trusted parameters through.
-    def mining_params
-      params.require(:mining).permit(:description, :acronym)
-    end
+  def set_coins_used
+    @coins_used_here = Coin.all.map(&:coin_name)
+  end
+
+  # Only allow a list of trusted parameters through.
+  def mining_params
+    params.require(:mining).permit(:description, :acronym, :coin_name)
+  end
 end

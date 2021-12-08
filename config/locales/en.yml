@@ -52,3 +52,6 @@ en:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+
+  message:
+    confirm: 'Are you sure?'
