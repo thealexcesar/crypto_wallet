@@ -1,5 +1,6 @@
 <div class="mt-5 d-flex w-100 flex-column align-items-center justify-content-between">
   <h1 class="h3"><%= t'coin.new_coin' %></h1>
   <%= render 'form', coin: @coin %>
-  <%= link_to (t'links.back'), coins_path %>
+  <%= link_to (t'links.back'), coins_path, class:'btn btn-dark bg-dark' %>
 </div>
+  

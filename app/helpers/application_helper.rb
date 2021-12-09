@@ -12,4 +12,22 @@ module ApplicationHelper
       "You are in test evironment!"
     end
   end
+
+  def greeting
+    now = Time.now
+    today = Date.today.to_time
+
+    morning = today.beginning_of_day
+    noon = today.noon
+    evening = today.change( hour: 17 )
+    tomorrow = today.tomorrow
+
+    if (morning..noon).cover? now
+      I18n.locale == :en ? 'Good Morning!' : 'Bom dia!'
+    elsif (noon..evening).cover? now
+      I18n.locale == :en ? 'Good Afternoon!' : 'Boa tarde!'
+    else
+      I18n.locale == :en ? 'Good Evening!' : 'Boa noite!'
+    end
+end
 end

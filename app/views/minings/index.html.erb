@@ -1,5 +1,5 @@
 <div class="mt-5 container d-flex justify-content-between">
-  <h1 class="h3"><%= t'minings' %></h1>
+  <h1 class="h4"><%= "#{Mining.model_name.human}" %></h1>
   <%= link_to new_mining_path do %>
     <button class="btn btn-dark"><%= t'coin.new_mining' %></button>
   <% end %>
@@ -18,9 +18,9 @@
       <tr>
         <td><%= mining.description %></td>
         <td><%= mining.acronym %></td>
-        <td><%= link_to (t'links.show'), mining %></td>
-        <td><%= link_to (t'links.edit'), edit_mining_path(mining) %></td>
-        <td><%= link_to (t'links.delete'), mining, method: :delete, data: { confirm: (t'message.special_confirm') } %></td>
+        <td><%= link_to (t'links.show'), mining, class:'btn btn-primary' %></td>
+        <td><%= link_to (t'links.edit'), edit_mining_path(mining), class:'btn btn-warning' %></td>
+        <td><%= link_to (t'links.delete'), mining, method: :delete, class:'btn btn-danger', data: { confirm: (t'message.special_confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

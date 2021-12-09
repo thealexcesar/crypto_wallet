@@ -1,8 +1,13 @@
 pt-BR:
   activerecord:
     models:
-      coin: moedas
-    attributes:
       coin:
-        coin_name: nome da moeda
-        acronym: nome
+        one: Moeda
+        other: Moedas
+      mining:
+        one: Tipo de mineração
+        other: Tipos de mineração
+    attributes:
+      # coin:
+        # coin_name: nome da moeda
+        # acronym: Sigla

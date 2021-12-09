@@ -1,8 +1,7 @@
 en:
-  greet: "Wellcome to the Crypto Wallet!"
+  title: Crypto Wallet
+  main: "This is the Crypto Wallet."
   crypto: "Cryptocurrence Page"
-  coins: 'Coins'
-  minings: 'Mining Types'
 
   coin:
     new_coin: 'New Coin'

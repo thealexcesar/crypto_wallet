@@ -1,7 +1,5 @@
 <div class="h4 mt-5 p-2 container border d-flex justify-content-between">
-  <%= link_to minings_path do %>
-    <button class="btn btn-dark "><%= t'minings' %></button>
-  <% end %>
+  <%= link_to "#{Mining.model_name.human(count: 2)}", minings_path, class:'btn btn-dark' %>
   <%= link_to new_coin_path do %>
     <button class="btn btn-dark "><%= t'coin.new_coin' %></button>
   <% end %>

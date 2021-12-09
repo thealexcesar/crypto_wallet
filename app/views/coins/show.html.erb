@@ -1,5 +1,5 @@
 
-<div class="mt-5 bg-light container text-center">
+<div class="mt-5 container text-center">
   <p>
     <strong><%= t'coin.name' %>:</strong>
     <%= @coin.coin_name %>
@@ -9,13 +9,13 @@
     <%= @coin.acronym %>
   </p>
   <div>
-    <%= image_tag @coin.url_image, size:'60x60' %>
+    <%= image_tag @coin.url_image, size:'50x50' %>
   </div>
   <div class="m-2 h5 ">
-    <p class="small text-secondary"><%= t'coin.mining_type' %></p>
+    <p class="small text-primary"><%= t'coin.mining_type' %></p>
     <p class="text-primary"><%= @mining %></p>
   </div>
   
-  <%= link_to (t('links.edit')), edit_coin_path(@coin) %> |
-  <%= link_to (t'links.back'), coins_path %>
+  <%= link_to (t('links.edit')), edit_coin_path(@coin), class:'bg-primary text-white p-2 text-center rounded shadow' %>
+  <%= link_to (t'links.back'), coins_path, class:'bg-primary text-white p-2 text-center rounded shadow' %>
 </div>

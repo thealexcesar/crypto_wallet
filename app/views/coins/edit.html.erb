@@ -1,6 +1,10 @@
 <div class="mt-5 d-flex w-100 flex-column align-items-center justify-content-between">
-  <h1><%= t'links.edit' %></h1>
+  <h1 class="h3"><%= t'links.edit' %></h1>
   <%= render 'form', coin: @coin %>
-  <%= link_to (t'links.show'), @coin %>
-  <%= link_to (t'links.back'), coins_path %>
+  <div class="d-flex justify-content-around container">
+    <div class="container d-flex justify-content-around col-xs-6 col-sm-8 col-md-6 col-lg-4">
+      <%= link_to (t'links.show'), @coin, class:'btn btn-dark' %>
+      <%= link_to (t'links.back'), coins_path, class:'btn btn-dark' %>
+    </div>
+  </div>
 </div>

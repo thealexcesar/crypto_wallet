@@ -1,17 +1,5 @@
 <div class="w-100 d-flex flex-column justify-content-between align-items-center">
 <%= form_with(model: mining) do |form| %>
-  <% if mining.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(mining.errors.count, "error") %> prohibited this mining from being saved:</h2>
-
-      <ul>
-        <% mining.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div class="my-2 w-100 d-flex flex-column">
     <%= form.label t'coin.name' %>
     <%= form.text_field :description %>
@@ -23,7 +11,7 @@
   </div>
 
   <div class="my-4 w-100 d-flex flex-column">
-    <%= form.submit t"coin.save" %>
+    <%= form.submit (t"coin.save"), class:'btn btn-primary' %>
   </div>
 <% end %>
 </div>

@@ -1,8 +1,7 @@
 pt-BR:
-  greet: Bem vindo ao Crypto Wallet!
+  title: Carteira Cripto
+  main: Este é o Crypto Wallet.
   crypto: Página Cripto
-  coins: Moedas
-  minings: Tipos de Mineração
 
   coin:
     new_coin: Nova Moeda
