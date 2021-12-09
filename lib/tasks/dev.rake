@@ -1,15 +1,15 @@
 namespace :dev do
   desc "Configura o ambiente de desenvolvimento"
   task setup: :environment do # Yield.
-    if Rails.env.development?
+    # if Rails.env.development?
       show_spinner("deletando\t"){ %x(rails db:drop) }
       show_spinner("criando\t") { %x(rails db:create)}
       show_spinner("migrando\t"){%x(rails db:migrate)}
       %x(rails dev:mining)
       %x(rails dev:coin)
-    else
-      puts "Você não está em ambiente de desenvolvimento!"
-    end
+    # else
+      # puts "Você não está em ambiente de desenvolvimento!"
+    # end
   end
 
   desc "Cadastra as moedas"

@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: crypto_production
-  username: crypto
+  username: alex
   password: <%= ENV['CRYPTO_DATABASE_PASSWORD'] %>

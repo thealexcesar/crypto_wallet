@@ -82,3 +82,275 @@ I, [2021-12-09T16:35:30.970182 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c31
 I, [2021-12-09T16:35:30.973405 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53]   Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 240)
 I, [2021-12-09T16:35:30.977138 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53]   Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 875)
 I, [2021-12-09T16:35:30.977669 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53] Completed 200 OK in 7ms (Views: 5.6ms | Allocations: 1313)
+I, [2021-12-09T17:01:16.271993 #119524]  INFO -- : Migrating to CreateCoins (20211206180600)
+I, [2021-12-09T17:01:16.290662 #119524]  INFO -- : Migrating to CreateMinings (20211207142804)
+I, [2021-12-09T17:01:16.304902 #119524]  INFO -- : Migrating to AddMiningToCoins (20211207184527)
+I, [2021-12-09T17:02:58.812208 #119690]  INFO -- : [4802cacc-6b06-40c5-9c56-160e2f1ea420] Started GET "/" for 127.0.0.1 at 2021-12-09 17:02:58 -0300
+I, [2021-12-09T17:02:58.814378 #119690]  INFO -- : [4802cacc-6b06-40c5-9c56-160e2f1ea420] Processing by HomeController#index as HTML
+I, [2021-12-09T17:02:58.825816 #119690]  INFO -- : [4802cacc-6b06-40c5-9c56-160e2f1ea420]   Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 556)
+I, [2021-12-09T17:02:58.834190 #119690]  INFO -- : [4802cacc-6b06-40c5-9c56-160e2f1ea420]   Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2193)
+I, [2021-12-09T17:02:58.835040 #119690]  INFO -- : [4802cacc-6b06-40c5-9c56-160e2f1ea420] Completed 200 OK in 20ms (Views: 13.0ms | Allocations: 3621)
+I, [2021-12-09T17:02:58.868892 #119690]  INFO -- : [4c5b31ae-b0df-4af3-a508-19e04a6a64eb] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:02:58 -0300
+F, [2021-12-09T17:02:58.869705 #119690] FATAL -- : [4c5b31ae-b0df-4af3-a508-19e04a6a64eb]   
+[4c5b31ae-b0df-4af3-a508-19e04a6a64eb] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[4c5b31ae-b0df-4af3-a508-19e04a6a64eb]   
+I, [2021-12-09T17:03:04.258810 #119690]  INFO -- : [b0f6354e-8c9d-4f85-90d9-2e231953f558] Started GET "/" for 127.0.0.1 at 2021-12-09 17:03:04 -0300
+I, [2021-12-09T17:03:04.281786 #119690]  INFO -- : [b0f6354e-8c9d-4f85-90d9-2e231953f558] Processing by HomeController#index as HTML
+I, [2021-12-09T17:03:04.284261 #119690]  INFO -- : [b0f6354e-8c9d-4f85-90d9-2e231953f558]   Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 241)
+I, [2021-12-09T17:03:04.287327 #119690]  INFO -- : [b0f6354e-8c9d-4f85-90d9-2e231953f558]   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 888)
+I, [2021-12-09T17:03:04.287867 #119690]  INFO -- : [b0f6354e-8c9d-4f85-90d9-2e231953f558] Completed 200 OK in 6ms (Views: 4.7ms | Allocations: 1339)
+I, [2021-12-09T17:03:04.294997 #119690]  INFO -- : [a8c61de9-6b5b-4204-b2d6-585a42b6c446] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:03:04 -0300
+F, [2021-12-09T17:03:04.295772 #119690] FATAL -- : [a8c61de9-6b5b-4204-b2d6-585a42b6c446]   
+[a8c61de9-6b5b-4204-b2d6-585a42b6c446] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[a8c61de9-6b5b-4204-b2d6-585a42b6c446]   
+I, [2021-12-09T17:03:05.457301 #119690]  INFO -- : [370743f3-4e6c-435e-8c6d-8c4f810fdeba] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:03:05 -0300
+I, [2021-12-09T17:03:05.475578 #119690]  INFO -- : [370743f3-4e6c-435e-8c6d-8c4f810fdeba] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:03:05.515651 #119690]  INFO -- : [370743f3-4e6c-435e-8c6d-8c4f810fdeba]   Rendered coins/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 853)
+I, [2021-12-09T17:03:05.517387 #119690]  INFO -- : [370743f3-4e6c-435e-8c6d-8c4f810fdeba]   Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1485)
+I, [2021-12-09T17:03:05.517821 #119690]  INFO -- : [370743f3-4e6c-435e-8c6d-8c4f810fdeba] Completed 200 OK in 42ms (Views: 8.1ms | ActiveRecord: 14.8ms | Allocations: 7209)
+I, [2021-12-09T17:03:05.524767 #119690]  INFO -- : [d26f7b8d-ed24-4d22-9834-43fd1b4bf790] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:03:05 -0300
+F, [2021-12-09T17:03:05.526058 #119690] FATAL -- : [d26f7b8d-ed24-4d22-9834-43fd1b4bf790]   
+[d26f7b8d-ed24-4d22-9834-43fd1b4bf790] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[d26f7b8d-ed24-4d22-9834-43fd1b4bf790]   
+I, [2021-12-09T17:03:09.570951 #119690]  INFO -- : [e13a4c97-7af4-427c-a8f9-4eaf8bc49c09] Started GET "/coins/new" for 127.0.0.1 at 2021-12-09 17:03:09 -0300
+I, [2021-12-09T17:03:09.572633 #119690]  INFO -- : [e13a4c97-7af4-427c-a8f9-4eaf8bc49c09] Processing by CoinsController#new as HTML
+I, [2021-12-09T17:03:09.599419 #119690]  INFO -- : [e13a4c97-7af4-427c-a8f9-4eaf8bc49c09]   Rendered coins/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1593)
+I, [2021-12-09T17:03:09.601177 #119690]  INFO -- : [e13a4c97-7af4-427c-a8f9-4eaf8bc49c09]   Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2221)
+I, [2021-12-09T17:03:09.601635 #119690]  INFO -- : [e13a4c97-7af4-427c-a8f9-4eaf8bc49c09] Completed 200 OK in 29ms (Views: 6.8ms | ActiveRecord: 9.6ms | Allocations: 6936)
+I, [2021-12-09T17:03:09.609799 #119690]  INFO -- : [f821c741-c84c-42eb-ace7-78f16ac32045] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:03:09 -0300
+F, [2021-12-09T17:03:09.610382 #119690] FATAL -- : [f821c741-c84c-42eb-ace7-78f16ac32045]   
+[f821c741-c84c-42eb-ace7-78f16ac32045] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[f821c741-c84c-42eb-ace7-78f16ac32045]   
+I, [2021-12-09T17:05:18.623209 #120129]  INFO -- : [830a2cf3-5f63-4a20-b753-1e2bf56fc561] Started GET "/" for 127.0.0.1 at 2021-12-09 17:05:18 -0300
+I, [2021-12-09T17:05:18.625503 #120129]  INFO -- : [830a2cf3-5f63-4a20-b753-1e2bf56fc561] Processing by HomeController#index as HTML
+I, [2021-12-09T17:05:18.638294 #120129]  INFO -- : [830a2cf3-5f63-4a20-b753-1e2bf56fc561]   Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 565)
+I, [2021-12-09T17:05:18.643354 #120129]  INFO -- : [830a2cf3-5f63-4a20-b753-1e2bf56fc561]   Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2203)
+I, [2021-12-09T17:05:18.643773 #120129]  INFO -- : [830a2cf3-5f63-4a20-b753-1e2bf56fc561] Completed 200 OK in 18ms (Views: 10.6ms | Allocations: 3623)
+I, [2021-12-09T17:05:22.019558 #120129]  INFO -- : [c35cc849-d781-497f-acae-7d7ef2b6d598] Started GET "/" for 127.0.0.1 at 2021-12-09 17:05:22 -0300
+I, [2021-12-09T17:05:22.020863 #120129]  INFO -- : [c35cc849-d781-497f-acae-7d7ef2b6d598] Processing by HomeController#index as HTML
+I, [2021-12-09T17:05:22.022942 #120129]  INFO -- : [c35cc849-d781-497f-acae-7d7ef2b6d598]   Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 241)
+I, [2021-12-09T17:05:22.025230 #120129]  INFO -- : [c35cc849-d781-497f-acae-7d7ef2b6d598]   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 888)
+I, [2021-12-09T17:05:22.025678 #120129]  INFO -- : [c35cc849-d781-497f-acae-7d7ef2b6d598] Completed 200 OK in 5ms (Views: 3.5ms | Allocations: 1326)
+I, [2021-12-09T17:05:25.547786 #120129]  INFO -- : [888ff39d-81e3-4969-b1e6-66ba23a8b116] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:05:25 -0300
+I, [2021-12-09T17:05:25.549590 #120129]  INFO -- : [888ff39d-81e3-4969-b1e6-66ba23a8b116] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:05:25.580824 #120129]  INFO -- : [888ff39d-81e3-4969-b1e6-66ba23a8b116]   Rendered coins/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 848)
+I, [2021-12-09T17:05:25.583197 #120129]  INFO -- : [888ff39d-81e3-4969-b1e6-66ba23a8b116]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1480)
+I, [2021-12-09T17:05:25.583612 #120129]  INFO -- : [888ff39d-81e3-4969-b1e6-66ba23a8b116] Completed 200 OK in 34ms (Views: 6.6ms | ActiveRecord: 11.9ms | Allocations: 7208)
+I, [2021-12-09T17:09:21.471761 #121156]  INFO -- : [e88cb738-bb51-4301-87f7-17d8bb773d50] Started GET "/" for 127.0.0.1 at 2021-12-09 17:09:21 -0300
+I, [2021-12-09T17:09:21.474198 #121156]  INFO -- : [e88cb738-bb51-4301-87f7-17d8bb773d50] Processing by HomeController#index as HTML
+I, [2021-12-09T17:09:21.487684 #121156]  INFO -- : [e88cb738-bb51-4301-87f7-17d8bb773d50]   Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 556)
+I, [2021-12-09T17:09:21.493794 #121156]  INFO -- : [e88cb738-bb51-4301-87f7-17d8bb773d50]   Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2208)
+I, [2021-12-09T17:09:21.494321 #121156]  INFO -- : [e88cb738-bb51-4301-87f7-17d8bb773d50] Completed 200 OK in 20ms (Views: 9.7ms | Allocations: 4135)
+I, [2021-12-09T17:09:21.528120 #121156]  INFO -- : [81767af6-571a-4a4b-a20b-6c2724b69fdc] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:09:21 -0300
+F, [2021-12-09T17:09:21.549103 #121156] FATAL -- : [81767af6-571a-4a4b-a20b-6c2724b69fdc]   
+[81767af6-571a-4a4b-a20b-6c2724b69fdc] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[81767af6-571a-4a4b-a20b-6c2724b69fdc]   
+I, [2021-12-09T17:09:27.700006 #121156]  INFO -- : [024d37c7-cecf-40ba-82a2-d614340a238b] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:09:27 -0300
+I, [2021-12-09T17:09:27.701431 #121156]  INFO -- : [024d37c7-cecf-40ba-82a2-d614340a238b] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:09:27.742137 #121156]  INFO -- : [024d37c7-cecf-40ba-82a2-d614340a238b]   Rendered coins/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 853)
+I, [2021-12-09T17:09:27.743821 #121156]  INFO -- : [024d37c7-cecf-40ba-82a2-d614340a238b]   Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1485)
+I, [2021-12-09T17:09:27.744325 #121156]  INFO -- : [024d37c7-cecf-40ba-82a2-d614340a238b] Completed 200 OK in 43ms (Views: 8.1ms | ActiveRecord: 13.1ms | Allocations: 7220)
+I, [2021-12-09T17:09:27.751513 #121156]  INFO -- : [abf5ba95-93dc-4ec5-a7e6-7ffa24b31700] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:09:27 -0300
+F, [2021-12-09T17:09:27.752243 #121156] FATAL -- : [abf5ba95-93dc-4ec5-a7e6-7ffa24b31700]   
+[abf5ba95-93dc-4ec5-a7e6-7ffa24b31700] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[abf5ba95-93dc-4ec5-a7e6-7ffa24b31700]   
+I, [2021-12-09T17:09:30.477565 #121156]  INFO -- : [6791c44e-3ab9-475e-a791-abd77d3982a8] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:09:30 -0300
+I, [2021-12-09T17:09:30.478538 #121156]  INFO -- : [6791c44e-3ab9-475e-a791-abd77d3982a8] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:09:30.483521 #121156]  INFO -- : [6791c44e-3ab9-475e-a791-abd77d3982a8]   Rendered coins/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 332)
+I, [2021-12-09T17:09:30.486495 #121156]  INFO -- : [6791c44e-3ab9-475e-a791-abd77d3982a8]   Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 957)
+I, [2021-12-09T17:09:30.487157 #121156]  INFO -- : [6791c44e-3ab9-475e-a791-abd77d3982a8] Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 1556)
+I, [2021-12-09T17:09:30.495072 #121156]  INFO -- : [b636ba83-0950-4970-9846-a91f4130f583] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-09 17:09:30 -0300
+F, [2021-12-09T17:09:30.495739 #121156] FATAL -- : [b636ba83-0950-4970-9846-a91f4130f583]   
+[b636ba83-0950-4970-9846-a91f4130f583] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[b636ba83-0950-4970-9846-a91f4130f583]   
+I, [2021-12-09T17:10:37.323304 #121572]  INFO -- : [37c046e4-8d86-48ee-a239-83e39ee703d1] Started GET "/" for 127.0.0.1 at 2021-12-09 17:10:37 -0300
+I, [2021-12-09T17:10:37.325219 #121572]  INFO -- : [37c046e4-8d86-48ee-a239-83e39ee703d1] Processing by HomeController#index as HTML
+I, [2021-12-09T17:10:37.336044 #121572]  INFO -- : [37c046e4-8d86-48ee-a239-83e39ee703d1]   Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 565)
+I, [2021-12-09T17:10:37.341425 #121572]  INFO -- : [37c046e4-8d86-48ee-a239-83e39ee703d1]   Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2203)
+I, [2021-12-09T17:10:37.342012 #121572]  INFO -- : [37c046e4-8d86-48ee-a239-83e39ee703d1] Completed 200 OK in 17ms (Views: 10.5ms | Allocations: 3660)
+I, [2021-12-09T17:10:39.851326 #121572]  INFO -- : [d035d156-eb0a-4e57-b4ee-e37a0d616a2f] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:10:39 -0300
+I, [2021-12-09T17:10:39.852790 #121572]  INFO -- : [d035d156-eb0a-4e57-b4ee-e37a0d616a2f] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:10:39.893818 #121572]  INFO -- : [d035d156-eb0a-4e57-b4ee-e37a0d616a2f]   Rendered coins/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 848)
+I, [2021-12-09T17:10:39.895828 #121572]  INFO -- : [d035d156-eb0a-4e57-b4ee-e37a0d616a2f]   Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1480)
+I, [2021-12-09T17:10:39.896238 #121572]  INFO -- : [d035d156-eb0a-4e57-b4ee-e37a0d616a2f] Completed 200 OK in 43ms (Views: 9.7ms | ActiveRecord: 15.2ms | Allocations: 7204)
+I, [2021-12-09T17:10:50.118109 #121572]  INFO -- : [4de39f1a-a5cc-4cb7-8262-cec089738b0a] Started GET "/coins/new" for 127.0.0.1 at 2021-12-09 17:10:50 -0300
+I, [2021-12-09T17:10:50.119659 #121572]  INFO -- : [4de39f1a-a5cc-4cb7-8262-cec089738b0a] Processing by CoinsController#new as HTML
+I, [2021-12-09T17:10:50.150825 #121572]  INFO -- : [4de39f1a-a5cc-4cb7-8262-cec089738b0a]   Rendered coins/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1593)
+I, [2021-12-09T17:10:50.153817 #121572]  INFO -- : [4de39f1a-a5cc-4cb7-8262-cec089738b0a]   Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2221)
+I, [2021-12-09T17:10:50.154172 #121572]  INFO -- : [4de39f1a-a5cc-4cb7-8262-cec089738b0a] Completed 200 OK in 34ms (Views: 11.9ms | ActiveRecord: 6.5ms | Allocations: 6948)
+I, [2021-12-09T17:11:32.589619 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624] Started POST "/coins" for 127.0.0.1 at 2021-12-09 17:11:32 -0300
+I, [2021-12-09T17:11:32.590995 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624] Processing by CoinsController#create as HTML
+I, [2021-12-09T17:11:32.591137 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624]   Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Bitcoin", "acronym"=>"BTC", "url_image"=>"https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png", "mining_id"=>""}, "commit"=>"salvar"}
+I, [2021-12-09T17:11:32.606949 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624]   Rendered coins/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 526)
+I, [2021-12-09T17:11:32.609130 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624]   Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 560)
+I, [2021-12-09T17:11:32.609616 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624] Redirected to http://0.0.0.0:3000/coins/new
+I, [2021-12-09T17:11:32.609843 #121572]  INFO -- : [1d7b4919-b3ab-4b74-8138-0f2f189ee624] Completed 302 Found in 19ms (ActiveRecord: 0.5ms | Allocations: 1727)
+I, [2021-12-09T17:11:32.618255 #121572]  INFO -- : [08ccbcaa-3cb1-414c-b8fc-a65c7e82fcd8] Started GET "/coins/new" for 127.0.0.1 at 2021-12-09 17:11:32 -0300
+I, [2021-12-09T17:11:32.621210 #121572]  INFO -- : [08ccbcaa-3cb1-414c-b8fc-a65c7e82fcd8] Processing by CoinsController#new as HTML
+I, [2021-12-09T17:11:32.629684 #121572]  INFO -- : [08ccbcaa-3cb1-414c-b8fc-a65c7e82fcd8]   Rendered coins/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 795)
+I, [2021-12-09T17:11:32.633504 #121572]  INFO -- : [08ccbcaa-3cb1-414c-b8fc-a65c7e82fcd8]   Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1422)
+I, [2021-12-09T17:11:32.633869 #121572]  INFO -- : [08ccbcaa-3cb1-414c-b8fc-a65c7e82fcd8] Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 2031)
+I, [2021-12-09T17:11:35.620243 #121572]  INFO -- : [2aecc413-5344-4622-99b1-81261bfa1e4b] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:11:35 -0300
+I, [2021-12-09T17:11:35.621948 #121572]  INFO -- : [2aecc413-5344-4622-99b1-81261bfa1e4b] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:11:35.628652 #121572]  INFO -- : [2aecc413-5344-4622-99b1-81261bfa1e4b]   Rendered coins/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 334)
+I, [2021-12-09T17:11:35.631925 #121572]  INFO -- : [2aecc413-5344-4622-99b1-81261bfa1e4b]   Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 958)
+I, [2021-12-09T17:11:35.632515 #121572]  INFO -- : [2aecc413-5344-4622-99b1-81261bfa1e4b] Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 1532)
+I, [2021-12-09T17:11:36.727164 #121572]  INFO -- : [68a2bdd8-fe6f-48f2-8f36-be6a1a0d8e2a] Started GET "/minings" for 127.0.0.1 at 2021-12-09 17:11:36 -0300
+I, [2021-12-09T17:11:36.730546 #121572]  INFO -- : [68a2bdd8-fe6f-48f2-8f36-be6a1a0d8e2a] Processing by MiningsController#index as HTML
+I, [2021-12-09T17:11:36.744054 #121572]  INFO -- : [68a2bdd8-fe6f-48f2-8f36-be6a1a0d8e2a]   Rendered minings/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 648)
+I, [2021-12-09T17:11:36.749610 #121572]  INFO -- : [68a2bdd8-fe6f-48f2-8f36-be6a1a0d8e2a]   Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 1279)
+I, [2021-12-09T17:11:36.750066 #121572]  INFO -- : [68a2bdd8-fe6f-48f2-8f36-be6a1a0d8e2a] Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.4ms | Allocations: 2344)
+I, [2021-12-09T17:11:38.559809 #121572]  INFO -- : [95570523-cf37-4846-92b2-2a2b80861d13] Started GET "/minings/new" for 127.0.0.1 at 2021-12-09 17:11:38 -0300
+I, [2021-12-09T17:11:38.564191 #121572]  INFO -- : [95570523-cf37-4846-92b2-2a2b80861d13] Processing by MiningsController#new as HTML
+I, [2021-12-09T17:11:38.614555 #121572]  INFO -- : [95570523-cf37-4846-92b2-2a2b80861d13]   Rendered minings/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1406)
+I, [2021-12-09T17:11:38.617339 #121572]  INFO -- : [95570523-cf37-4846-92b2-2a2b80861d13]   Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2036)
+I, [2021-12-09T17:11:38.617845 #121572]  INFO -- : [95570523-cf37-4846-92b2-2a2b80861d13] Completed 200 OK in 53ms (Views: 10.0ms | ActiveRecord: 3.0ms | Allocations: 4842)
+I, [2021-12-09T17:11:51.032731 #121572]  INFO -- : [aa14e5fc-618c-4163-b40d-2bfa15f6486b] Started POST "/minings" for 127.0.0.1 at 2021-12-09 17:11:51 -0300
+I, [2021-12-09T17:11:51.034066 #121572]  INFO -- : [aa14e5fc-618c-4163-b40d-2bfa15f6486b] Processing by MiningsController#create as HTML
+I, [2021-12-09T17:11:51.034201 #121572]  INFO -- : [aa14e5fc-618c-4163-b40d-2bfa15f6486b]   Parameters: {"authenticity_token"=>"[FILTERED]", "mining"=>{"description"=>"Proof of Work", "acronym"=>"PoW"}, "commit"=>"salvar"}
+I, [2021-12-09T17:11:51.043642 #121572]  INFO -- : [aa14e5fc-618c-4163-b40d-2bfa15f6486b] Redirected to http://0.0.0.0:3000/minings/1
+I, [2021-12-09T17:11:51.044128 #121572]  INFO -- : [aa14e5fc-618c-4163-b40d-2bfa15f6486b] Completed 302 Found in 10ms (ActiveRecord: 3.3ms | Allocations: 1073)
+I, [2021-12-09T17:11:51.053291 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c] Started GET "/minings/1" for 127.0.0.1 at 2021-12-09 17:11:51 -0300
+I, [2021-12-09T17:11:51.054652 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c] Processing by MiningsController#show as HTML
+I, [2021-12-09T17:11:51.054949 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c]   Parameters: {"id"=>"1"}
+I, [2021-12-09T17:11:51.064673 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c]   Rendered minings/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 350)
+I, [2021-12-09T17:11:51.066831 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c]   Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 987)
+I, [2021-12-09T17:11:51.067295 #121572]  INFO -- : [ee0e0ff5-5a25-4d66-887d-669d79bcef6c] Completed 200 OK in 12ms (Views: 4.3ms | ActiveRecord: 1.1ms | Allocations: 2124)
+I, [2021-12-09T17:11:53.302423 #121572]  INFO -- : [28df30b7-6682-4362-825a-c0692e6da5c4] Started GET "/minings" for 127.0.0.1 at 2021-12-09 17:11:53 -0300
+I, [2021-12-09T17:11:53.303628 #121572]  INFO -- : [28df30b7-6682-4362-825a-c0692e6da5c4] Processing by MiningsController#index as HTML
+I, [2021-12-09T17:11:53.308737 #121572]  INFO -- : [28df30b7-6682-4362-825a-c0692e6da5c4]   Rendered minings/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 521)
+I, [2021-12-09T17:11:53.311295 #121572]  INFO -- : [28df30b7-6682-4362-825a-c0692e6da5c4]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1145)
+I, [2021-12-09T17:11:53.311908 #121572]  INFO -- : [28df30b7-6682-4362-825a-c0692e6da5c4] Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 1615)
+I, [2021-12-09T17:11:57.255969 #121572]  INFO -- : [1d586420-d823-408b-8375-0e0a3b1238c2] Started GET "/minings/new" for 127.0.0.1 at 2021-12-09 17:11:57 -0300
+I, [2021-12-09T17:11:57.257105 #121572]  INFO -- : [1d586420-d823-408b-8375-0e0a3b1238c2] Processing by MiningsController#new as HTML
+I, [2021-12-09T17:11:57.262901 #121572]  INFO -- : [1d586420-d823-408b-8375-0e0a3b1238c2]   Rendered minings/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 835)
+I, [2021-12-09T17:11:57.264529 #121572]  INFO -- : [1d586420-d823-408b-8375-0e0a3b1238c2]   Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1458)
+I, [2021-12-09T17:11:57.264930 #121572]  INFO -- : [1d586420-d823-408b-8375-0e0a3b1238c2] Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1926)
+I, [2021-12-09T17:12:15.868192 #121572]  INFO -- : [8671e01b-0dfb-4146-b8ac-20f2092d9ee4] Started POST "/minings" for 127.0.0.1 at 2021-12-09 17:12:15 -0300
+I, [2021-12-09T17:12:15.869622 #121572]  INFO -- : [8671e01b-0dfb-4146-b8ac-20f2092d9ee4] Processing by MiningsController#create as HTML
+I, [2021-12-09T17:12:15.869785 #121572]  INFO -- : [8671e01b-0dfb-4146-b8ac-20f2092d9ee4]   Parameters: {"authenticity_token"=>"[FILTERED]", "mining"=>{"description"=>"Proof of Stake", "acronym"=>"PoS"}, "commit"=>"salvar"}
+I, [2021-12-09T17:12:15.877566 #121572]  INFO -- : [8671e01b-0dfb-4146-b8ac-20f2092d9ee4] Redirected to http://0.0.0.0:3000/minings/2
+I, [2021-12-09T17:12:15.878240 #121572]  INFO -- : [8671e01b-0dfb-4146-b8ac-20f2092d9ee4] Completed 302 Found in 8ms (ActiveRecord: 2.1ms | Allocations: 855)
+I, [2021-12-09T17:12:15.891296 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f] Started GET "/minings/2" for 127.0.0.1 at 2021-12-09 17:12:15 -0300
+I, [2021-12-09T17:12:15.892562 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f] Processing by MiningsController#show as HTML
+I, [2021-12-09T17:12:15.892717 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f]   Parameters: {"id"=>"2"}
+I, [2021-12-09T17:12:15.896592 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f]   Rendered minings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 157)
+I, [2021-12-09T17:12:15.898609 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f]   Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 786)
+I, [2021-12-09T17:12:15.899190 #121572]  INFO -- : [ffc5fc2b-759b-4b70-95cc-3963b336e52f] Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1370)
+I, [2021-12-09T17:12:17.091889 #121572]  INFO -- : [b1b528de-7463-43a9-9b9a-dc8763385741] Started GET "/minings" for 127.0.0.1 at 2021-12-09 17:12:17 -0300
+I, [2021-12-09T17:12:17.094715 #121572]  INFO -- : [b1b528de-7463-43a9-9b9a-dc8763385741] Processing by MiningsController#index as HTML
+I, [2021-12-09T17:12:17.100020 #121572]  INFO -- : [b1b528de-7463-43a9-9b9a-dc8763385741]   Rendered minings/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 717)
+I, [2021-12-09T17:12:17.108410 #121572]  INFO -- : [b1b528de-7463-43a9-9b9a-dc8763385741]   Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 1341)
+I, [2021-12-09T17:12:17.109052 #121572]  INFO -- : [b1b528de-7463-43a9-9b9a-dc8763385741] Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 1808)
+I, [2021-12-09T17:12:19.079979 #121572]  INFO -- : [2aa00135-3af3-48d1-a763-f30300c042e3] Started GET "/minings/new" for 127.0.0.1 at 2021-12-09 17:12:19 -0300
+I, [2021-12-09T17:12:19.084645 #121572]  INFO -- : [2aa00135-3af3-48d1-a763-f30300c042e3] Processing by MiningsController#new as HTML
+I, [2021-12-09T17:12:19.097195 #121572]  INFO -- : [2aa00135-3af3-48d1-a763-f30300c042e3]   Rendered minings/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 833)
+I, [2021-12-09T17:12:19.100501 #121572]  INFO -- : [2aa00135-3af3-48d1-a763-f30300c042e3]   Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 1456)
+I, [2021-12-09T17:12:19.100960 #121572]  INFO -- : [2aa00135-3af3-48d1-a763-f30300c042e3] Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 1924)
+I, [2021-12-09T17:12:36.565138 #121572]  INFO -- : [bb8b9701-2afd-4492-8e70-ccf07312c07e] Started POST "/minings" for 127.0.0.1 at 2021-12-09 17:12:36 -0300
+I, [2021-12-09T17:12:36.569236 #121572]  INFO -- : [bb8b9701-2afd-4492-8e70-ccf07312c07e] Processing by MiningsController#create as HTML
+I, [2021-12-09T17:12:36.569599 #121572]  INFO -- : [bb8b9701-2afd-4492-8e70-ccf07312c07e]   Parameters: {"authenticity_token"=>"[FILTERED]", "mining"=>{"description"=>"Proof of Capacity", "acronym"=>"PoC"}, "commit"=>"salvar"}
+I, [2021-12-09T17:12:36.585310 #121572]  INFO -- : [bb8b9701-2afd-4492-8e70-ccf07312c07e] Redirected to http://0.0.0.0:3000/minings/3
+I, [2021-12-09T17:12:36.585755 #121572]  INFO -- : [bb8b9701-2afd-4492-8e70-ccf07312c07e] Completed 302 Found in 16ms (ActiveRecord: 6.7ms | Allocations: 864)
+I, [2021-12-09T17:12:36.594543 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9] Started GET "/minings/3" for 127.0.0.1 at 2021-12-09 17:12:36 -0300
+I, [2021-12-09T17:12:36.597392 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9] Processing by MiningsController#show as HTML
+I, [2021-12-09T17:12:36.597529 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9]   Parameters: {"id"=>"3"}
+I, [2021-12-09T17:12:36.602716 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9]   Rendered minings/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+I, [2021-12-09T17:12:36.608051 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9]   Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 786)
+I, [2021-12-09T17:12:36.608482 #121572]  INFO -- : [d6b898e5-fa3c-43bb-97e6-6936cb9111e9] Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 1358)
+I, [2021-12-09T17:12:37.854958 #121572]  INFO -- : [bd537fa3-4eac-4647-9528-9aa3915d5754] Started GET "/minings" for 127.0.0.1 at 2021-12-09 17:12:37 -0300
+I, [2021-12-09T17:12:37.857080 #121572]  INFO -- : [bd537fa3-4eac-4647-9528-9aa3915d5754] Processing by MiningsController#index as HTML
+I, [2021-12-09T17:12:37.866874 #121572]  INFO -- : [bd537fa3-4eac-4647-9528-9aa3915d5754]   Rendered minings/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 931)
+I, [2021-12-09T17:12:37.872129 #121572]  INFO -- : [bd537fa3-4eac-4647-9528-9aa3915d5754]   Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 1555)
+I, [2021-12-09T17:12:37.872599 #121572]  INFO -- : [bd537fa3-4eac-4647-9528-9aa3915d5754] Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.5ms | Allocations: 2024)
+I, [2021-12-09T17:12:40.018829 #121572]  INFO -- : [271595e2-1826-4815-a4e4-b2278d41bbed] Started GET "/minings/new" for 127.0.0.1 at 2021-12-09 17:12:40 -0300
+I, [2021-12-09T17:12:40.020388 #121572]  INFO -- : [271595e2-1826-4815-a4e4-b2278d41bbed] Processing by MiningsController#new as HTML
+I, [2021-12-09T17:12:40.030076 #121572]  INFO -- : [271595e2-1826-4815-a4e4-b2278d41bbed]   Rendered minings/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 833)
+I, [2021-12-09T17:12:40.036010 #121572]  INFO -- : [271595e2-1826-4815-a4e4-b2278d41bbed]   Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1456)
+I, [2021-12-09T17:12:40.036564 #121572]  INFO -- : [271595e2-1826-4815-a4e4-b2278d41bbed] Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 1934)
+I, [2021-12-09T17:12:40.931852 #121572]  INFO -- : [9e6a64eb-21fd-4bbc-810c-e5b1104e7a14] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:12:40 -0300
+I, [2021-12-09T17:12:40.936136 #121572]  INFO -- : [9e6a64eb-21fd-4bbc-810c-e5b1104e7a14] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:12:40.946458 #121572]  INFO -- : [9e6a64eb-21fd-4bbc-810c-e5b1104e7a14]   Rendered coins/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 338)
+I, [2021-12-09T17:12:40.951798 #121572]  INFO -- : [9e6a64eb-21fd-4bbc-810c-e5b1104e7a14]   Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 969)
+I, [2021-12-09T17:12:40.952391 #121572]  INFO -- : [9e6a64eb-21fd-4bbc-810c-e5b1104e7a14] Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 2.9ms | Allocations: 1562)
+I, [2021-12-09T17:12:42.303690 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543] Started GET "/?locale=en" for 127.0.0.1 at 2021-12-09 17:12:42 -0300
+I, [2021-12-09T17:12:42.306045 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543] Processing by HomeController#index as HTML
+I, [2021-12-09T17:12:42.306184 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543]   Parameters: {"locale"=>"en"}
+I, [2021-12-09T17:12:42.313555 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543]   Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 253)
+I, [2021-12-09T17:12:42.316056 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1006)
+I, [2021-12-09T17:12:42.316584 #121572]  INFO -- : [351a96ba-833e-43da-ac34-dae493d98543] Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1975)
+I, [2021-12-09T17:12:44.523119 #121572]  INFO -- : [d3b0bfa3-87bf-4c9d-b29f-b13c03b7910a] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:12:44 -0300
+I, [2021-12-09T17:12:44.524711 #121572]  INFO -- : [d3b0bfa3-87bf-4c9d-b29f-b13c03b7910a] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:12:44.532509 #121572]  INFO -- : [d3b0bfa3-87bf-4c9d-b29f-b13c03b7910a]   Rendered coins/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 330)
+I, [2021-12-09T17:12:44.534979 #121572]  INFO -- : [d3b0bfa3-87bf-4c9d-b29f-b13c03b7910a]   Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 955)
+I, [2021-12-09T17:12:44.535579 #121572]  INFO -- : [d3b0bfa3-87bf-4c9d-b29f-b13c03b7910a] Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 1.0ms | Allocations: 1913)
+I, [2021-12-09T17:12:45.786415 #121572]  INFO -- : [4273db2e-f886-4189-9f36-328afc608cfc] Started GET "/coins/new" for 127.0.0.1 at 2021-12-09 17:12:45 -0300
+I, [2021-12-09T17:12:45.788464 #121572]  INFO -- : [4273db2e-f886-4189-9f36-328afc608cfc] Processing by CoinsController#new as HTML
+I, [2021-12-09T17:12:45.795463 #121572]  INFO -- : [4273db2e-f886-4189-9f36-328afc608cfc]   Rendered coins/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1002)
+I, [2021-12-09T17:12:45.798339 #121572]  INFO -- : [4273db2e-f886-4189-9f36-328afc608cfc]   Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1626)
+I, [2021-12-09T17:12:45.807001 #121572]  INFO -- : [4273db2e-f886-4189-9f36-328afc608cfc] Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.4ms | Allocations: 2331)
+I, [2021-12-09T17:12:59.818371 #121572]  INFO -- : [070d8792-3d7b-423d-b36c-7dd81844a077] Started POST "/coins" for 127.0.0.1 at 2021-12-09 17:12:59 -0300
+I, [2021-12-09T17:12:59.820219 #121572]  INFO -- : [070d8792-3d7b-423d-b36c-7dd81844a077] Processing by CoinsController#create as HTML
+I, [2021-12-09T17:12:59.820411 #121572]  INFO -- : [070d8792-3d7b-423d-b36c-7dd81844a077]   Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Bitcoin", "acronym"=>"BTC", "url_image"=>"https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png", "mining_id"=>"1"}, "commit"=>"save"}
+I, [2021-12-09T17:12:59.836605 #121572]  INFO -- : [070d8792-3d7b-423d-b36c-7dd81844a077] Redirected to http://0.0.0.0:3000/coins/1
+I, [2021-12-09T17:12:59.836984 #121572]  INFO -- : [070d8792-3d7b-423d-b36c-7dd81844a077] Completed 302 Found in 16ms (ActiveRecord: 4.4ms | Allocations: 1435)
+I, [2021-12-09T17:12:59.845072 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25] Started GET "/coins/1" for 127.0.0.1 at 2021-12-09 17:12:59 -0300
+I, [2021-12-09T17:12:59.846252 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25] Processing by CoinsController#show as HTML
+I, [2021-12-09T17:12:59.846400 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25]   Parameters: {"id"=>"1"}
+I, [2021-12-09T17:12:59.856589 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25]   Rendered coins/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 474)
+I, [2021-12-09T17:12:59.858980 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25]   Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1110)
+I, [2021-12-09T17:12:59.859744 #121572]  INFO -- : [958c1f8c-e8c7-4e1d-90f7-02a88cefbb25] Completed 200 OK in 13ms (Views: 4.8ms | ActiveRecord: 1.9ms | Allocations: 2311)
+I, [2021-12-09T17:13:01.577722 #121572]  INFO -- : [b716222f-1cfa-4511-bb31-e1c18a1ee925] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:13:01 -0300
+I, [2021-12-09T17:13:01.578580 #121572]  INFO -- : [b716222f-1cfa-4511-bb31-e1c18a1ee925] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:13:01.583397 #121572]  INFO -- : [b716222f-1cfa-4511-bb31-e1c18a1ee925]   Rendered coins/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 598)
+I, [2021-12-09T17:13:01.585205 #121572]  INFO -- : [b716222f-1cfa-4511-bb31-e1c18a1ee925]   Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1223)
+I, [2021-12-09T17:13:01.585645 #121572]  INFO -- : [b716222f-1cfa-4511-bb31-e1c18a1ee925] Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.9ms | Allocations: 1823)
+I, [2021-12-09T17:13:11.371940 #121572]  INFO -- : [d3f94bb8-07cd-49a8-a62e-61964ab6fe12] Started GET "/coins/new" for 127.0.0.1 at 2021-12-09 17:13:11 -0300
+I, [2021-12-09T17:13:11.373472 #121572]  INFO -- : [d3f94bb8-07cd-49a8-a62e-61964ab6fe12] Processing by CoinsController#new as HTML
+I, [2021-12-09T17:13:11.383023 #121572]  INFO -- : [d3f94bb8-07cd-49a8-a62e-61964ab6fe12]   Rendered coins/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 860)
+I, [2021-12-09T17:13:11.386728 #121572]  INFO -- : [d3f94bb8-07cd-49a8-a62e-61964ab6fe12]   Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 1484)
+I, [2021-12-09T17:13:11.387360 #121572]  INFO -- : [d3f94bb8-07cd-49a8-a62e-61964ab6fe12] Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.6ms | Allocations: 2077)
+I, [2021-12-09T17:13:43.546475 #121572]  INFO -- : [f2772e81-4180-4de0-a4c9-3085c5bfdeab] Started GET "/" for 127.0.0.1 at 2021-12-09 17:13:43 -0300
+I, [2021-12-09T17:13:43.548505 #121572]  INFO -- : [f2772e81-4180-4de0-a4c9-3085c5bfdeab] Processing by HomeController#index as HTML
+I, [2021-12-09T17:13:43.551254 #121572]  INFO -- : [f2772e81-4180-4de0-a4c9-3085c5bfdeab]   Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 241)
+I, [2021-12-09T17:13:43.556367 #121572]  INFO -- : [f2772e81-4180-4de0-a4c9-3085c5bfdeab]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 888)
+I, [2021-12-09T17:13:43.557050 #121572]  INFO -- : [f2772e81-4180-4de0-a4c9-3085c5bfdeab] Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 1331)
+I, [2021-12-09T17:13:46.617229 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3] Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-09 17:13:46 -0300
+I, [2021-12-09T17:13:46.618578 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3] Processing by HomeController#index as HTML
+I, [2021-12-09T17:13:46.618719 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3]   Parameters: {"locale"=>"pt-BR"}
+I, [2021-12-09T17:13:46.620267 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3]   Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 240)
+I, [2021-12-09T17:13:46.621814 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3]   Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 875)
+I, [2021-12-09T17:13:46.622185 #121572]  INFO -- : [6bd24fa8-b369-4493-8b5e-256c2c7966b3] Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1344)
+I, [2021-12-09T17:13:51.564581 #121572]  INFO -- : [6f37ee1f-cebd-4673-b8cf-6feb1d3d79c4] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:13:51 -0300
+I, [2021-12-09T17:13:51.565790 #121572]  INFO -- : [6f37ee1f-cebd-4673-b8cf-6feb1d3d79c4] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:13:51.574924 #121572]  INFO -- : [6f37ee1f-cebd-4673-b8cf-6feb1d3d79c4]   Rendered coins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 592)
+I, [2021-12-09T17:13:51.577103 #121572]  INFO -- : [6f37ee1f-cebd-4673-b8cf-6feb1d3d79c4]   Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1216)
+I, [2021-12-09T17:13:51.577698 #121572]  INFO -- : [6f37ee1f-cebd-4673-b8cf-6feb1d3d79c4] Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 1.5ms | Allocations: 1816)
+I, [2021-12-09T17:13:53.427911 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931] Started GET "/coins/1" for 127.0.0.1 at 2021-12-09 17:13:53 -0300
+I, [2021-12-09T17:13:53.429368 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931] Processing by CoinsController#show as HTML
+I, [2021-12-09T17:13:53.429561 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931]   Parameters: {"id"=>"1"}
+I, [2021-12-09T17:13:53.436848 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931]   Rendered coins/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 216)
+I, [2021-12-09T17:13:53.439439 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 841)
+I, [2021-12-09T17:13:53.439897 #121572]  INFO -- : [70db42c0-fc7d-45af-9e19-ba31fa52e931] Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 1.4ms | Allocations: 1886)
+I, [2021-12-09T17:13:57.299752 #121572]  INFO -- : [7fb4db77-7333-4dd1-a3f0-1738e49b0ed0] Started GET "/coins" for 127.0.0.1 at 2021-12-09 17:13:57 -0300
+I, [2021-12-09T17:13:57.301127 #121572]  INFO -- : [7fb4db77-7333-4dd1-a3f0-1738e49b0ed0] Processing by CoinsController#index as HTML
+I, [2021-12-09T17:13:57.308908 #121572]  INFO -- : [7fb4db77-7333-4dd1-a3f0-1738e49b0ed0]   Rendered coins/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 592)
+I, [2021-12-09T17:13:57.312224 #121572]  INFO -- : [7fb4db77-7333-4dd1-a3f0-1738e49b0ed0]   Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1216)
+I, [2021-12-09T17:13:57.313207 #121572]  INFO -- : [7fb4db77-7333-4dd1-a3f0-1738e49b0ed0] Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.9ms | Allocations: 1815)
+I, [2021-12-09T17:14:01.657060 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362] Started GET "/?locale=en" for 127.0.0.1 at 2021-12-09 17:14:01 -0300
+I, [2021-12-09T17:14:01.658001 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362] Processing by HomeController#index as HTML
+I, [2021-12-09T17:14:01.658102 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362]   Parameters: {"locale"=>"en"}
+I, [2021-12-09T17:14:01.659894 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362]   Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 240)
+I, [2021-12-09T17:14:01.661967 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 876)
+I, [2021-12-09T17:14:01.662509 #121572]  INFO -- : [09ce0ae8-ce6f-422a-9e03-f31593a23362] Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1344)
+I, [2021-12-09T17:14:04.321947 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1] Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-09 17:14:04 -0300
+I, [2021-12-09T17:14:04.323705 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1] Processing by HomeController#index as HTML
+I, [2021-12-09T17:14:04.323873 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1]   Parameters: {"locale"=>"pt-BR"}
+I, [2021-12-09T17:14:04.327112 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1]   Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 240)
+I, [2021-12-09T17:14:04.330709 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1]   Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 875)
+I, [2021-12-09T17:14:04.331363 #121572]  INFO -- : [5a2ef0ad-f922-436c-a84a-1c918c2f70a1] Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1332)
+I, [2021-12-09T17:42:53.278358 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023] Started GET "/" for 127.0.0.1 at 2021-12-09 17:42:53 -0300
+I, [2021-12-09T17:42:53.286763 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023] Processing by HomeController#index as HTML
+I, [2021-12-09T17:42:53.302244 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023]   Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 676)
+I, [2021-12-09T17:42:53.307745 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023]   Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2306)
+I, [2021-12-09T17:42:53.308719 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023] Completed 200 OK in 22ms (Views: 12.3ms | Allocations: 3739)
