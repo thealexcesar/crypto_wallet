@@ -1,0 +1,15 @@
+Started GET "/" for 127.0.0.1 at 2021-12-09 16:33:56 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2207)
+  Rendered shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 13875)
+Completed 200 OK in 53ms (Views: 34.1ms | Allocations: 16783)
+Started GET "/coins" for 127.0.0.1 at 2021-12-09 16:33:57 -0300
+Processing by CoinsController#index as HTML
+Completed 500 Internal Server Error in 7ms (Allocations: 2571)
+  
+ActiveRecord::ConnectionNotEstablished (No connection pool for 'ActiveRecord::Base' found.):
+  
+app/controllers/coins_controller.rb:70:in `set_mining_type'

@@ -5,7 +5,7 @@ module ApplicationHelper
     if Rails.env.development?
       I18n.locale == :en ? "You are in development evironment." : "Você está em ambiente de desenvolvimento."
       # I18n.default_locale = "pt-BR"
-    elsif Rails.env.Production?
+    elsif Rails.env.production?
       I18n.locale == :en ? "You are in production evironment." : "Você está em ambiente de produção."
       # I18n.default_locale = :en
     else

@@ -19,3 +19,66 @@ I, [2021-12-06T16:48:28.246351 #39062]  INFO -- : [f9b1f005-87ce-4f89-b3a6-e5563
 F, [2021-12-06T16:48:28.248315 #39062] FATAL -- : [f9b1f005-87ce-4f89-b3a6-e5563df883bb]   
 [f9b1f005-87ce-4f89-b3a6-e5563df883bb] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
 [f9b1f005-87ce-4f89-b3a6-e5563df883bb]   
+I, [2021-12-09T16:34:11.245531 #116169]  INFO -- : [dd7e23b7-1f2d-4e16-9a5c-5c531486dd91] Started GET "/" for 127.0.0.1 at 2021-12-09 16:34:11 -0300
+I, [2021-12-09T16:34:11.248034 #116169]  INFO -- : [dd7e23b7-1f2d-4e16-9a5c-5c531486dd91] Processing by HomeController#index as HTML
+I, [2021-12-09T16:34:11.256980 #116169]  INFO -- : [dd7e23b7-1f2d-4e16-9a5c-5c531486dd91]   Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 560)
+I, [2021-12-09T16:34:11.262237 #116169]  INFO -- : [dd7e23b7-1f2d-4e16-9a5c-5c531486dd91]   Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2197)
+I, [2021-12-09T16:34:11.263088 #116169]  INFO -- : [dd7e23b7-1f2d-4e16-9a5c-5c531486dd91] Completed 200 OK in 15ms (Views: 8.6ms | Allocations: 3621)
+I, [2021-12-09T16:34:12.761130 #116169]  INFO -- : [57ef7e1e-e86f-47a2-9634-727e920e6617] Started GET "/coins" for 127.0.0.1 at 2021-12-09 16:34:12 -0300
+I, [2021-12-09T16:34:12.762566 #116169]  INFO -- : [57ef7e1e-e86f-47a2-9634-727e920e6617] Processing by CoinsController#index as HTML
+I, [2021-12-09T16:34:12.791746 #116169]  INFO -- : [57ef7e1e-e86f-47a2-9634-727e920e6617] Completed 500 Internal Server Error in 29ms (Allocations: 912)
+F, [2021-12-09T16:34:12.792789 #116169] FATAL -- : [57ef7e1e-e86f-47a2-9634-727e920e6617]   
+[57ef7e1e-e86f-47a2-9634-727e920e6617] ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "crypto"
+):
+[57ef7e1e-e86f-47a2-9634-727e920e6617]   
+[57ef7e1e-e86f-47a2-9634-727e920e6617] app/controllers/coins_controller.rb:70:in `set_mining_type'
+I, [2021-12-09T16:34:14.712809 #116169]  INFO -- : [0b5e5844-257a-415c-a47a-cc3b83a19d2e] Started GET "/" for 127.0.0.1 at 2021-12-09 16:34:14 -0300
+I, [2021-12-09T16:34:14.713620 #116169]  INFO -- : [0b5e5844-257a-415c-a47a-cc3b83a19d2e] Processing by HomeController#index as HTML
+I, [2021-12-09T16:34:14.715209 #116169]  INFO -- : [0b5e5844-257a-415c-a47a-cc3b83a19d2e]   Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 245)
+I, [2021-12-09T16:34:14.717158 #116169]  INFO -- : [0b5e5844-257a-415c-a47a-cc3b83a19d2e]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 892)
+I, [2021-12-09T16:34:14.717573 #116169]  INFO -- : [0b5e5844-257a-415c-a47a-cc3b83a19d2e] Completed 200 OK in 4ms (Views: 3.0ms | Allocations: 1331)
+I, [2021-12-09T16:35:04.886330 #116577]  INFO -- : [48626609-9635-4f04-bfcd-2aa4faaaef57] Started GET "/" for 127.0.0.1 at 2021-12-09 16:35:04 -0300
+I, [2021-12-09T16:35:04.888328 #116577]  INFO -- : [48626609-9635-4f04-bfcd-2aa4faaaef57] Processing by HomeController#index as HTML
+I, [2021-12-09T16:35:04.900383 #116577]  INFO -- : [48626609-9635-4f04-bfcd-2aa4faaaef57]   Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 556)
+I, [2021-12-09T16:35:04.908190 #116577]  INFO -- : [48626609-9635-4f04-bfcd-2aa4faaaef57]   Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2193)
+I, [2021-12-09T16:35:04.908925 #116577]  INFO -- : [48626609-9635-4f04-bfcd-2aa4faaaef57] Completed 200 OK in 20ms (Views: 12.9ms | Allocations: 3629)
+I, [2021-12-09T16:35:09.083694 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d] Started GET "/?locale=en" for 127.0.0.1 at 2021-12-09 16:35:09 -0300
+I, [2021-12-09T16:35:09.084998 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d] Processing by HomeController#index as HTML
+I, [2021-12-09T16:35:09.085125 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d]   Parameters: {"locale"=>"en"}
+I, [2021-12-09T16:35:09.112250 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d]   Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 253)
+I, [2021-12-09T16:35:09.114580 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d]   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1008)
+I, [2021-12-09T16:35:09.114926 #116577]  INFO -- : [41827a70-76bc-43af-bf49-6d345a3cc24d] Completed 200 OK in 30ms (Views: 4.4ms | Allocations: 1979)
+I, [2021-12-09T16:35:11.371555 #116577]  INFO -- : [587f0982-d008-4799-9c00-23234669671c] Started GET "/coins" for 127.0.0.1 at 2021-12-09 16:35:11 -0300
+I, [2021-12-09T16:35:11.372611 #116577]  INFO -- : [587f0982-d008-4799-9c00-23234669671c] Processing by CoinsController#index as HTML
+I, [2021-12-09T16:35:11.378432 #116577]  INFO -- : [587f0982-d008-4799-9c00-23234669671c] Completed 500 Internal Server Error in 6ms (Allocations: 917)
+F, [2021-12-09T16:35:11.379470 #116577] FATAL -- : [587f0982-d008-4799-9c00-23234669671c]   
+[587f0982-d008-4799-9c00-23234669671c] ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "crypto"
+):
+[587f0982-d008-4799-9c00-23234669671c]   
+[587f0982-d008-4799-9c00-23234669671c] app/controllers/coins_controller.rb:70:in `set_mining_type'
+I, [2021-12-09T16:35:12.779039 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33] Started GET "/?locale=en" for 127.0.0.1 at 2021-12-09 16:35:12 -0300
+I, [2021-12-09T16:35:12.780272 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33] Processing by HomeController#index as HTML
+I, [2021-12-09T16:35:12.780423 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33]   Parameters: {"locale"=>"en"}
+I, [2021-12-09T16:35:12.783101 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33]   Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 240)
+I, [2021-12-09T16:35:12.785913 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33]   Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 877)
+I, [2021-12-09T16:35:12.786584 #116577]  INFO -- : [798a3b04-3486-4086-a7c7-bdcf994fce33] Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 1322)
+I, [2021-12-09T16:35:20.330713 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b] Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-09 16:35:20 -0300
+I, [2021-12-09T16:35:20.332614 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b] Processing by HomeController#index as HTML
+I, [2021-12-09T16:35:20.332751 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b]   Parameters: {"locale"=>"pt-BR"}
+I, [2021-12-09T16:35:20.335347 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b]   Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 240)
+I, [2021-12-09T16:35:20.338934 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b]   Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 876)
+I, [2021-12-09T16:35:20.339466 #116577]  INFO -- : [c091343f-057b-4ed8-aca6-7c3e5f1dee6b] Completed 200 OK in 7ms (Views: 5.4ms | Allocations: 1319)
+I, [2021-12-09T16:35:28.384510 #116577]  INFO -- : [0f93ac17-7d1d-4109-9a23-2bce40a34f37] Started GET "/coins" for 127.0.0.1 at 2021-12-09 16:35:28 -0300
+I, [2021-12-09T16:35:28.385901 #116577]  INFO -- : [0f93ac17-7d1d-4109-9a23-2bce40a34f37] Processing by CoinsController#index as HTML
+I, [2021-12-09T16:35:28.389955 #116577]  INFO -- : [0f93ac17-7d1d-4109-9a23-2bce40a34f37] Completed 500 Internal Server Error in 4ms (Allocations: 617)
+F, [2021-12-09T16:35:28.390962 #116577] FATAL -- : [0f93ac17-7d1d-4109-9a23-2bce40a34f37]   
+[0f93ac17-7d1d-4109-9a23-2bce40a34f37] ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "crypto"
+):
+[0f93ac17-7d1d-4109-9a23-2bce40a34f37]   
+[0f93ac17-7d1d-4109-9a23-2bce40a34f37] app/controllers/coins_controller.rb:70:in `set_mining_type'
+I, [2021-12-09T16:35:30.968491 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53] Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-09 16:35:30 -0300
+I, [2021-12-09T16:35:30.969963 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53] Processing by HomeController#index as HTML
+I, [2021-12-09T16:35:30.970182 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53]   Parameters: {"locale"=>"pt-BR"}
+I, [2021-12-09T16:35:30.973405 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53]   Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 240)
+I, [2021-12-09T16:35:30.977138 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53]   Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 875)
+I, [2021-12-09T16:35:30.977669 #116577]  INFO -- : [a22bfe88-61d6-4078-99ba-9c316762fb53] Completed 200 OK in 7ms (Views: 5.6ms | Allocations: 1313)
