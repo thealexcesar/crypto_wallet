@@ -27,15 +27,12 @@ class CoinsController < ApplicationController
         format.html { redirect_to @coin, notice: (t'notice_coin.create') }
         format.json { render :show, status: :created, location: @coin }
       else
-        if @coin.coin_name == nil
-          redirect_to @coin.errors, alert: 'Nome nao pode ficar vazio'
-          @coin.coin_name(coin: "", locale: "pt-BR")
-        else
-          format.html { render :new, status: :unprocessable_entity }
-          format.json { render json: @coin.errors, status: :unprocessable_entity }
-        end
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @coin.errors, status: :unprocessable_entity }
       end
     end
+    rescue
+      redirect_to new_coin_path, alert: (t'message.all_fields')
   end
 
   # PATCH/PUT /coins/1 or /coins/1.json
@@ -49,6 +46,8 @@ class CoinsController < ApplicationController
         format.json { render json: @coin.errors, status: :unprocessable_entity }
       end
     end
+    rescue
+      redirect_to edit_coin_path, alert: (t'message.all_fields')
   end
 
   # DELETE /coins/1 or /coins/1.json

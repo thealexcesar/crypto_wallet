@@ -1,0 +1,19 @@
+<div class="container mt-2 w-100 d-flex justify-content-end">
+  <%
+    alert_class = ""
+
+    flash.each do |type, message|
+      case type.to_s
+        when "sucess"
+          alert_class = "alert-sucess"
+        when "alert"
+          alert_class = "alert-danger"
+        when "notice"
+          alert_class = "alert-info"
+        else
+          alert_class = "alert-secondary"
+      end
+  %>
+    <%= "<div class='alert #{alert_class}'><p>#{message}</p></div>".html_safe %>
+    <% end %>
+</div>

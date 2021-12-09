@@ -26,6 +26,7 @@ en:
   message:
     confirm: 'Are you sure?'
     special_confirm: Are you sure? The linked coins will be deleted.
+    all_fields: Fill in all fields.
   notice_coin:
     create: Coin was successfully created.
     update: Coin was successfully updated.

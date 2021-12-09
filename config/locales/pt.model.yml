@@ -1,8 +1,8 @@
 pt-BR:
   activerecord:
     models:
-      coin: moedas em models
+      coin: moedas
     attributes:
       coin:
-        coin_name: moedas em models testando
-        acronym: sigla em models
+        coin_name: nome da moeda
+        acronym: nome

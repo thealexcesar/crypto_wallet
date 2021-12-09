@@ -26,6 +26,7 @@ pt-BR:
   message:
     confirm: Tem certeza?
     special_confirm: Tem certeza? As moedas vinculadas serão deletadas.
+    all_fields: preencha todos os campos.
   notice_coin:
     create: Moeda criada com sucesso.
     update: Moeda atualizada com sucesso.
@@ -34,6 +35,7 @@ pt-BR:
     create: Tipo de mineração criada com sucesso.
     update: Tipo de mineração atualizada com sucesso.
     destroy: Tipo de mineração deletada com sucesso.
+
 
   # home/index.html.erb
   header1: 'O que é uma carteira de criptomoeda?'

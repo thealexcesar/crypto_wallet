@@ -1,17 +1,12 @@
 <div class="mt-5 bg-light container text-center">
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong><%= t'coin.name' %></strong>
-  <%= @mining.description %>
-</p>
-
-<p>
-  <strong><%= t'coin.acronym' %></strong>
-  <%= @mining.acronym %>
-</p>
-
-<%= link_to (t'links.edit'), edit_mining_path(@mining) %> |
-<%= link_to (t'links.back'), minings_path %>
+  <p>
+    <strong><%= t'coin.name' %></strong>
+    <%= @mining.description %>
+  </p>
+  <p>
+    <strong><%= t'coin.acronym' %></strong>
+    <%= @mining.acronym %>
+  </p>
+  <%= link_to (t'links.edit'), edit_mining_path(@mining) %> |
+  <%= link_to (t'links.back'), minings_path %>
 </div>
