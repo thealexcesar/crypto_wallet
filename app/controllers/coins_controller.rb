@@ -22,14 +22,18 @@ class CoinsController < ApplicationController
   # POST /coins or /coins.json
   def create
     @coin = Coin.new(coin_params)
-
     respond_to do |format|
       if @coin.save
-        format.html { redirect_to @coin, notice: "Coin was successfully created." }
+        format.html { redirect_to @coin, notice: (t'notice_coin.create') }
         format.json { render :show, status: :created, location: @coin }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @coin.errors, status: :unprocessable_entity }
+        if @coin.coin_name == nil
+          redirect_to @coin.errors, alert: 'Nome nao pode ficar vazio'
+          @coin.coin_name(coin: "", locale: "pt-BR")
+        else
+          format.html { render :new, status: :unprocessable_entity }
+          format.json { render json: @coin.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
@@ -38,7 +42,7 @@ class CoinsController < ApplicationController
   def update
     respond_to do |format|
       if @coin.update(coin_params)
-        format.html { redirect_to @coin, notice: "Coin was successfully updated." }
+        format.html { redirect_to @coin, notice: (t'notice_coin.update') }
         format.json { render :show, status: :ok, location: @coin }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +55,7 @@ class CoinsController < ApplicationController
   def destroy
     @coin.destroy
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: "Coin was successfully destroyed." }
+      format.html { redirect_to coins_url, notice: (t'notice_coin.destroy') }
       format.json { head :no_content }
     end
   end

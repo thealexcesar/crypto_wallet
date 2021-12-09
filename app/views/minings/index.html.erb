@@ -1,13 +1,16 @@
 <p id="notice"><%= notice %></p>
-
-<h1><%= t'minings' %></h1>
-
-<table>
+<div class="mt-5 container d-flex justify-content-between">
+  <h1 class="h3"><%= t'minings' %></h1>
+  <%= link_to new_mining_path do %>
+    <button class="btn btn-dark"><%= t'coin.new_mining' %></button>
+  <% end %>
+</div>
+<table class="mt-2 container table shadow table-striped table-hover border rounded shadow">
   <thead>
     <tr>
       <th><%= t'coin.name' %></th>
       <th><%= t'coin.acronym' %></th>
-      <th colspan="3"></th>
+      <th class="text-end"><%= t'coin.option' %></th>
     </tr>
   </thead>
 
@@ -18,11 +21,9 @@
         <td><%= mining.acronym %></td>
         <td><%= link_to (t'links.show'), mining %></td>
         <td><%= link_to (t'links.edit'), edit_mining_path(mining) %></td>
-        <td><%= link_to (t'links.delete'), mining, method: :delete, data: { confirm: (t'message.confirm') } %></td>
+        <td><%= link_to (t'links.delete'), mining, method: :delete, data: { confirm: (t'message.special_confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-<%= link_to (t'coin.new_mining'), new_mining_path %>

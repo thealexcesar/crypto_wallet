@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
     if params[:locale]
       cookies[:locale] = params[:locale]
     end
-
     if cookies[:locale]
       unless I18n.locale == cookies[:locale]
         I18n.locale = cookies[:locale]

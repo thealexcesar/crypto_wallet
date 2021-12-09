@@ -1,6 +1,6 @@
-<h1><%= t'links.edit' %></h1>
-
-<%= render 'form', coin: @coin %>
-
-<%= link_to (t'links.show'), @coin %> |
-<%= link_to (t'links.back'), coins_path %>
+<div class="mt-5 d-flex w-100 flex-column align-items-center justify-content-between">
+  <h1><%= t'links.edit' %></h1>
+  <%= render 'form', coin: @coin %>
+  <%= link_to (t'links.show'), @coin %>
+  <%= link_to (t'links.back'), coins_path %>
+</div>

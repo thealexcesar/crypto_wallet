@@ -1,4 +1,41 @@
 en:
+  greet: "Wellcome to the Crypto Wallet!"
+  crypto: "Cryptocurrence Page"
+  coins: 'Coins'
+  minings: 'Mining Types'
+
+  coin:
+    new_coin: 'New Coin'
+    new_mining: 'New Mining Type'
+    name: 'Name'
+    acronym: 'Acronym'
+    image: 'Image'
+    option: 'Options'
+    mining_type: 'Mining Type'
+    select: 'select'
+    save: 'save'
+
+  home: 'Crypto Wallet'
+
+  links:
+    back: 'Back'
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+
+  message:
+    confirm: 'Are you sure?'
+    special_confirm: Are you sure? The linked coins will be deleted.
+  notice_coin:
+    create: Coin was successfully created.
+    update: Coin was successfully updated.
+    destroy: Coin was successfully destroyed.
+  notice_mining:
+    create: Mining type was successfully created.
+    update: Mining type was successfully updated.
+    destroy: Mining type was successfully destroyed.
+
+  # home/index.html.erb
   header1: 'What is a cryptocurrency wallet?'
   p_header: A cryptocurrency wallet is an app that allows cryptocurrency users to store and retrieve their digital assets.
     As with conventional currency, you don’t need a wallet to spend your cash, but it certainly helps to keep it all
@@ -25,31 +62,3 @@ en:
     blockchain, Bilbo becomes the owner of the bitcoin. Later, Bilbo wants to book a flight to Gondor. His travel agent
     accepts bitcoin, and he directs a precise amount from his bitcoin wallet to the travel agent and receives a plane
     ticket in return.
-
-
-  greet: "Wellcome to the Crypto Wallet!"
-  crypto: "Cryptocurrence Page"
-  coins: 'Coins'
-  minings: 'Mining Types'
-  coin:
-    new_coin: 'New Coin'
-    new_mining: 'New Mining Type'
-    name: 'Name'
-    acronym: 'Acronym'
-    image: 'Image'
-    option: 'Options'
-    mining_type: 'Mining Type'
-    select: 'select'
-    create: 'save'
-
-  home: 'Crypto Wallet'
-
-  links:
-    back: 'Back'
-    edit: "Edit"
-    show: "Show"
-    delete: "Delete"
-
-  message:
-    confirm: 'Are you sure?'
-

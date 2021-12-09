@@ -1,3 +1,4 @@
+<div class="w-100 d-flex flex-column justify-content-between align-items-center">
 <%= form_with(model: mining) do |form| %>
   <% if mining.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +12,18 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="my-2 w-100 d-flex flex-column">
     <%= form.label t'coin.name' %>
     <%= form.text_field :description %>
   </div>
 
-  <div class="field">
+  <div class="my-2 w-100 d-flex flex-column">
     <%= form.label t'coin.acronym' %>
     <%= form.text_field :acronym %>
   </div>
 
-  <div class="actions">
+  <div class="my-4 w-100 d-flex flex-column">
     <%= form.submit t"coin.save" %>
   </div>
 <% end %>
+</div>

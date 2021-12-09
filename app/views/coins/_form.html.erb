@@ -1,3 +1,4 @@
+  <div class="w-100 d-flex flex-column justify-content-between align-items-center">
 <%= form_with(model: coin, local: true) do |f| %>
   <% if coin.errors.any? %>
     <div id="error_explanation">
@@ -10,26 +11,25 @@
       </ul>
     </div>
   <% end %>
-  <div class="container">
-    <div class="">
+    <div class="my-2 w-100 d-flex flex-column">
       <%= f.text_field :coin_name, class: 'rounded', placeholder:'Crypto ex: Bitcoin' %>
     </div>
 
-    <div class="my-2">
+    <div class="my-2 w-100 d-flex flex-column">
       <%= f.text_field :acronym, class: 'rounded', placeholder:'Acronym ex: BTC' %>
     </div>
 
-    <div class="w-100">
+    <div class="my-2 w-100 d-flex flex-column">
       <%= f.text_field :url_image, class: 'rounded', placeholder:'url image ex: https://example.google.coin-4720.png' %>
     </div>
 
-    <div class=" my-2 w-25 d-flex flex-column">
+    <div class="my-2 w-100 d-flex flex-column">
       <%= f.label t'coin.mining_type' %>
       <%= f.select "mining_id", @mining_type, include_blank:(t'coin.select') %>
     </div>
 
-    <div class="actions">
-      <%= f.submit t'coin.save' %>
+    <div class="text-center my-4">
+      <%= f.submit t'coin.save', class:'btn btn-primary' %>
     </div>
   </div>
 <% end %>

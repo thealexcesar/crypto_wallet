@@ -26,7 +26,7 @@ class MiningsController < ApplicationController
 
     respond_to do |format|
       if @mining.save
-        format.html { redirect_to @mining, notice: "Mining was successfully created." }
+        format.html { redirect_to @mining, notice: (t'notice_mining.create') }
         format.json { render :show, status: :created, location: @mining }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class MiningsController < ApplicationController
   def update
     respond_to do |format|
       if @mining.update(mining_params)
-        format.html { redirect_to @mining, notice: "Mining was successfully updated." }
+        format.html { redirect_to @mining, notice: (t'notice_mining.update') }
         format.json { render :show, status: :ok, location: @mining }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,16 +52,18 @@ class MiningsController < ApplicationController
   def destroy
     @mining.destroy
     respond_to do |format|
-      format.html { redirect_to minings_url, notice: "Mining was successfully destroyed." }
+      format.html { redirect_to minings_url, notice: (t'notice_mining.destroy') }
       format.json { head :no_content }
     end
+  rescue
+    redirect_to mining_path, alert: 'forbiden!'
   end
 
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_mining
     @mining = Mining.find(params[:id])
-    # @coin = Mining.find(params[:id]).coin.coin_name
+    # @coin = @mining.coin.coin_name
   end
 
   # def set_coins_used

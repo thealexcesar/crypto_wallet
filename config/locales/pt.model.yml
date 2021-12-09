@@ -1,7 +1,8 @@
 pt-BR:
   activerecord:
     models:
-      Mining: mining
+      coin: moedas em models
     attributes:
-      Mining:
-        acronym: Sigla
+      coin:
+        coin_name: moedas em models testando
+        acronym: sigla em models

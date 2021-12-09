@@ -3,6 +3,7 @@ pt-BR:
   crypto: Página Cripto
   coins: Moedas
   minings: Tipos de Mineração
+
   coin:
     new_coin: Nova Moeda
     new_mining: Novo Tipo de Mineração
@@ -15,6 +16,7 @@ pt-BR:
     save: salvar
 
   home: Carteira cripto
+
   links:
     back: Voltar
     edit: Editar
@@ -22,7 +24,16 @@ pt-BR:
     delete: Apagar
 
   message:
-    confirm: Certeza que quer deletar?
+    confirm: Tem certeza?
+    special_confirm: Tem certeza? As moedas vinculadas serão deletadas.
+  notice_coin:
+    create: Moeda criada com sucesso.
+    update: Moeda atualizada com sucesso.
+    destroy: Moeda deletada com sucesso.
+  notice_mining:
+    create: Tipo de mineração criada com sucesso.
+    update: Tipo de mineração atualizada com sucesso.
+    destroy: Tipo de mineração deletada com sucesso.
 
   # home/index.html.erb
   header1: 'O que é uma carteira de criptomoeda?'
