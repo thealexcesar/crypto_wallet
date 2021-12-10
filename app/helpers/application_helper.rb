@@ -23,11 +23,11 @@ module ApplicationHelper
     tomorrow = today.tomorrow
 
     if (morning..noon).cover? now
-      I18n.locale == :en ? 'Good Morning!' : 'Bom dia!'
+      I18n.locale == :en ? 'Good morning!' : 'Bom dia!'
     elsif (noon..evening).cover? now
-      I18n.locale == :en ? 'Good Afternoon!' : 'Boa tarde!'
+      I18n.locale == :en ? 'Good afternoon!' : 'Boa tarde!'
     else
-      I18n.locale == :en ? 'Good Evening!' : 'Boa noite!'
+      I18n.locale == :en ? 'Good evening!' : 'Boa noite!'
     end
 end
 end

@@ -1,4 +1,4 @@
-<div class="mt-5 bg-light container text-center">
+<div class="mt-5 container d-flex flex-column justify-content-between w-100 h-50 text-center">
   <p>
     <strong><%= t'coin.name' %></strong>
     <%= @mining.description %>
@@ -7,6 +7,8 @@
     <strong><%= t'coin.acronym' %></strong>
     <%= @mining.acronym %>
   </p>
-  <%= link_to (t'links.edit'), edit_mining_path(@mining) %> |
-  <%= link_to (t'links.back'), minings_path %>
+    <div class="container d-flex justify-content-around col-xs-4 col-sm-5 col-md-4 col-lg-3   ">
+      <%= link_to (t'links.edit'), @mining, class:'btn btn-dark' %>
+      <%= link_to (t'links.back'), minings_path, class:'btn btn-dark' %>
+    </div>
 </div>

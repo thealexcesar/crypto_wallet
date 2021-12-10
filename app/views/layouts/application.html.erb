@@ -12,25 +12,37 @@
 
 <body>
   <header class="d-flex justify-content-around align-items-center text-center bg-light shadow">
-    <%= link_to t('home'),root_path %>
-    <h1 class="h5 text-danger d-lg-block d-md-block d-none"><%= greeting %> <%= t'main' %></h1>
-    <ul class="d-flex justify-content-between">
-      <li class="d-flex align-items-center mt-3">
-        <%= link_to "#{Coin.model_name.human(count: 2)}", coins_path, class:'text-white bg-dark shadow rounded p-2 border border-secondary' %>
-      </li>
-    </ul>
-    <% if I18n.locale == :en %>
-      <%#= link_to '/?locale=en' do %> <!-- or -->
-      <%= link_to root_path(locale: 'pt-BR') do %>
-        Português
-        <%= fa_icon('language') %>
-      <% end %>
-    <% else %>
-      <%= link_to root_path(locale: 'en') do %>
-        English
-        <%= fa_icon('language') %>
-      <% end %>
-    <% end %>
+    <div class="d-flex justify-content-around col-lg-1 col-md-2 d-sm-5 col-xs-5">
+      <%= image_tag 'coins-solid.svg', size:'25x25' %>
+    </div>
+    <span class="col-lg-4 col-md-3 col-sm-3 col-xs-1">
+      <%= link_to t('home'),root_path %>
+    </span>
+    <div class="d-flex col-lg-3 col-md-4 col-sm-5 col-xs-6 align-items-center justify-content-around">
+      <ul class="align-items-center pt-3">
+        <li>
+          <%= link_to "#{Coin.model_name.human(count: 2)}", coins_path, class:'text-white bg-dark shadow rounded p-2 me-2 border border-secondary' %>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-between">
+        <% if I18n.locale == :en %>
+          <%#= link_to '/?locale=en' do %> <!-- or -->
+          <%= link_to root_path(locale: 'pt-BR') do %>
+            <div class="d-flex align-items-center">
+              <span class="text-primary">Português</span>
+              <span class="text-primary"><%= fa_icon('language') %></span>
+            <div>
+          <% end %>
+        <% else %>
+          <%= link_to root_path(locale: 'en') do %>
+            <div class="d-flex align-items-center ">
+              <span class="text-primary pe-1">English</span>
+              <span class="text-primary"><%= fa_icon('language') %></span>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
   </header>
   <%= render 'shared/alerts' %>
   <%= yield %>
