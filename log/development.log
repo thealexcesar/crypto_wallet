@@ -61701,3 +61701,2065 @@ Processing by MiningsController#show as HTML
 Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 1.3ms | Allocations: 10026)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-10 09:31:33 -0300
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 2.0ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 163.1ms | Allocations: 25221)
+Completed 200 OK in 202ms (Views: 172.1ms | ActiveRecord: 0.0ms | Allocations: 28042)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2021-12-10 09:31:38 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 9074)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 10010)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-10 09:31:40 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 8945)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 9386)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2021-12-10 09:31:44 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8943)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 9381)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-10 09:31:45 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 8943)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 9381)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:32:44 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoinsController#index as HTML
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 67.8ms | Allocations: 9948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 1.1ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 111.0ms | Allocations: 31457)
+Completed 200 OK in 158ms (Views: 101.6ms | ActiveRecord: 21.3ms | Allocations: 38011)
+
+
+Started GET "/coins/1" for 127.0.0.1 at 2021-12-10 09:32:47 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9112)
+Completed 200 OK in 56ms (Views: 16.5ms | ActiveRecord: 8.6ms | Allocations: 16823)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:32:50 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 11822)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 3.0ms | Allocations: 13016)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 09:32:55 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (2.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8901)
+Completed 200 OK in 33ms (Views: 16.0ms | ActiveRecord: 4.9ms | Allocations: 11788)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:32:59 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 11816)
+Completed 200 OK in 39ms (Views: 28.9ms | ActiveRecord: 4.4ms | Allocations: 12991)
+
+
+Started GET "/coins/1" for 127.0.0.1 at 2021-12-10 09:33:00 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (1.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 8901)
+Completed 200 OK in 36ms (Views: 20.3ms | ActiveRecord: 4.6ms | Allocations: 11787)
+
+
+Started GET "/coins/1/edit" for 127.0.0.1 at 2021-12-10 09:33:03 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (1.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 5.6ms | Allocations: 1682)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 10878)
+Completed 200 OK in 39ms (Views: 24.3ms | ActiveRecord: 4.1ms | Allocations: 13874)
+
+
+Started GET "/coins/1" for 127.0.0.1 at 2021-12-10 09:33:06 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (1.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8901)
+Completed 200 OK in 28ms (Views: 15.1ms | ActiveRecord: 3.4ms | Allocations: 11774)
+
+
+Started GET "/coins/1/edit" for 127.0.0.1 at 2021-12-10 09:33:07 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.5ms | Allocations: 714)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 9612)
+Completed 200 OK in 43ms (Views: 26.7ms | ActiveRecord: 4.6ms | Allocations: 12481)
+
+
+Started PATCH "/coins/1" for 127.0.0.1 at 2021-12-10 09:33:10 -0300
+Processing by CoinsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"Bitcoin", "acronym"=>"BTC", "url_image"=>"https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbitcoin%2Fcolor_icon.png&w=32&q=75", "mining_id"=>"1"}, "commit"=>"salvar", "id"=>"1"}
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:41:in `block in update'
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:41:in `block in update'
+  [1m[36mCoin Update (2.9ms)[0m  [1m[33mUPDATE "coins" SET "updated_at" = $1, "mining_id" = $2 WHERE "coins"."id" = $3[0m  [["updated_at", "2021-12-10 12:33:10.972697"], ["mining_id", 1], ["id", 1]]
+  ↳ app/controllers/coins_controller.rb:41:in `block in update'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:41:in `block in update'
+Redirected to http://127.0.0.1:3000/coins/1
+Completed 302 Found in 38ms (ActiveRecord: 13.1ms | Allocations: 6494)
+
+
+Started GET "/coins/1" for 127.0.0.1 at 2021-12-10 09:33:10 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (1.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 8903)
+Completed 200 OK in 34ms (Views: 20.2ms | ActiveRecord: 3.4ms | Allocations: 11772)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:33:13 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 11818)
+Completed 200 OK in 29ms (Views: 21.3ms | ActiveRecord: 3.2ms | Allocations: 12993)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:33:15 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1874)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 10549)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.3ms | Allocations: 11588)
+
+
+Started DELETE "/minings/3" for 127.0.0.1 at 2021-12-10 09:33:25 -0300
+Processing by MiningsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mMining Load (2.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Load (1.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."mining_id" = $1[0m  [["mining_id", 3]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mMining Destroy (1.7ms)[0m  [1m[31mDELETE FROM "minings" WHERE "minings"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/minings
+Completed 302 Found in 30ms (ActiveRecord: 10.8ms | Allocations: 5394)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:33:25 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 10045)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 1.8ms | Allocations: 10496)
+
+
+Started GET "/minings/new" for 127.0.0.1 at 2021-12-10 09:33:27 -0300
+Processing by MiningsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/new.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 2.6ms | Allocations: 911)
+  Rendered minings/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 10026)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 10613)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:33:28 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (2.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1336)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 10046)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 2.2ms | Allocations: 10497)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-10 09:33:30 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 9260)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 10268)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:33:31 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 11832)
+Completed 200 OK in 35ms (Views: 25.4ms | ActiveRecord: 4.0ms | Allocations: 13004)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2021-12-10 09:33:32 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 9061)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 9987)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:33:33 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 11815)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 2.9ms | Allocations: 13351)
+
+
+Started DELETE "/coins/2" for 127.0.0.1 at 2021-12-10 09:36:23 -0300
+Processing by CoinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mCoin Destroy (1.5ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+Redirected to http://127.0.0.1:3000/coins
+Completed 302 Found in 23ms (ActiveRecord: 8.7ms | Allocations: 4004)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:36:23 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 12729)
+Completed 200 OK in 31ms (Views: 23.2ms | ActiveRecord: 3.0ms | Allocations: 14654)
+
+
+Started DELETE "/coins/3" for 127.0.0.1 at 2021-12-10 09:36:25 -0300
+Processing by CoinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mCoin Load (0.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (2.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mCoin Destroy (1.6ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+Redirected to http://127.0.0.1:3000/coins
+Completed 302 Found in 24ms (ActiveRecord: 8.8ms | Allocations: 3997)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:36:25 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2619)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 11338)
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 2.9ms | Allocations: 12513)
+
+
+Started GET "/coins/4/edit" for 127.0.0.1 at 2021-12-10 09:36:27 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoin Load (2.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 4.9ms | Allocations: 1074)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1556)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 10267)
+Completed 200 OK in 41ms (Views: 23.6ms | ActiveRecord: 5.3ms | Allocations: 13264)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:36:30 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2612)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 11322)
+Completed 200 OK in 36ms (Views: 26.9ms | ActiveRecord: 4.6ms | Allocations: 12495)
+
+
+Started GET "/coins/4" for 127.0.0.1 at 2021-12-10 09:36:49 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoin Load (1.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 9143)
+Completed 200 OK in 32ms (Views: 18.6ms | ActiveRecord: 4.0ms | Allocations: 12140)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:36:51 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 11323)
+Completed 200 OK in 34ms (Views: 24.1ms | ActiveRecord: 3.7ms | Allocations: 12496)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (22.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_development"[0m
+  [1m[35m (22.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crypto_test"[0m
+  [1m[35m (275.6ms)[0m  [1m[35mCREATE DATABASE "crypto_development" ENCODING = 'unicode'[0m
+  [1m[35m (136.0ms)[0m  [1m[35mCREATE DATABASE "crypto_test" ENCODING = 'unicode'[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7764686539811591670)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCoins (20211206180600)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "coins" ("id" bigserial primary key, "coin_name" character varying, "acronym" character varying, "url_image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211206180600"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMinings (20211207142804)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "minings" ("id" bigserial primary key, "description" character varying, "acronym" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207142804"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddMiningToCoins (20211207184527)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "coins" ADD "mining_id" bigint[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE INDEX "index_coins_on_mining_id" ON "coins" ("mining_id")[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "coins" ADD CONSTRAINT "fk_rails_d0c0cfb6f1"
+FOREIGN KEY ("mining_id")
+  REFERENCES "minings" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207184527"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-12-10 12:37:31.399501"], ["updated_at", "2021-12-10 12:37:31.399501"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7764686539811591670)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMining Load (0.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."description" = $1 AND "minings"."acronym" = $2 LIMIT $3[0m  [["description", "Proof of Work"], ["acronym", "PoW"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Create (0.8ms)[0m  [1m[32mINSERT INTO "minings" ("description", "acronym", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Proof of Work"], ["acronym", "PoW"], ["created_at", "2021-12-10 12:37:32.602734"], ["updated_at", "2021-12-10 12:37:32.602734"]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Load (0.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."description" = $1 AND "minings"."acronym" = $2 LIMIT $3[0m  [["description", "Proof of Stake"], ["acronym", "PoS"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Create (0.6ms)[0m  [1m[32mINSERT INTO "minings" ("description", "acronym", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Proof of Stake"], ["acronym", "PoS"], ["created_at", "2021-12-10 12:37:32.612022"], ["updated_at", "2021-12-10 12:37:32.612022"]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Load (0.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."description" = $1 AND "minings"."acronym" = $2 LIMIT $3[0m  [["description", "Proof of Capacity"], ["acronym", "PoC"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Create (0.3ms)[0m  [1m[32mINSERT INTO "minings" ("description", "acronym", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Proof of Capacity"], ["acronym", "PoC"], ["created_at", "2021-12-10 12:37:32.622954"], ["updated_at", "2021-12-10 12:37:32.622954"]]
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:71:in `block (4 levels) in <main>'
+  [1m[36mMining Load (1.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:22:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:27:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:31:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:35:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:39:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:43:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:47:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:51:in `block (3 levels) in <main>'
+  [1m[36mMining Load (0.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ lib/tasks/dev.rake:55:in `block (3 levels) in <main>'
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbitcoin%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 3], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (1.2ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbitcoin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.811000"], ["updated_at", "2021-12-10 12:37:33.811000"], ["mining_id", 3]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 2], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.6ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fethereum%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.831744"], ["updated_at", "2021-12-10 12:37:33.831744"], ["mining_id", 2]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Binance Coin"], ["acronym", "BNB"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.6ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Binance Coin"], ["acronym", "BNB"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fbinance-coin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.838384"], ["updated_at", "2021-12-10 12:37:33.838384"], ["mining_id", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Tether"], ["acronym", "USDT"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Ftether%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.5ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Tether"], ["acronym", "USDT"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Ftether%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.847642"], ["updated_at", "2021-12-10 12:37:33.847642"], ["mining_id", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Solana"], ["acronym", "SOL"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fsolana%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 3], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.6ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Solana"], ["acronym", "SOL"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fsolana%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.853815"], ["updated_at", "2021-12-10 12:37:33.853815"], ["mining_id", 3]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Cardano"], ["acronym", "ADA"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fcardano%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 3], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.8ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Cardano"], ["acronym", "ADA"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fcardano%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.860052"], ["updated_at", "2021-12-10 12:37:33.860052"], ["mining_id", 3]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "USD Coin"], ["acronym", "USDC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fusd-coin%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 2], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.8ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "USD Coin"], ["acronym", "USDC"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Fusd-coin%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.868233"], ["updated_at", "2021-12-10 12:37:33.868233"], ["mining_id", 2]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Axie Infinity"], ["acronym", "AXS"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"], ["mining_id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.5ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Axie Infinity"], ["acronym", "AXS"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Faxie-infinity%2Fcolor_icon.png&w=32&q=75"], ["created_at", "2021-12-10 12:37:33.876544"], ["updated_at", "2021-12-10 12:37:33.876544"], ["mining_id", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."coin_name" = $1 AND "coins"."acronym" = $2 AND "coins"."url_image" = $3 AND "coins"."mining_id" = $4 LIMIT $5[0m  [["coin_name", "Algorand"], ["acronym", "ALGO"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Falgorand%2Fcolor_icon.png&w=48&q=75"], ["mining_id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mCoin Create (0.6ms)[0m  [1m[32mINSERT INTO "coins" ("coin_name", "acronym", "url_image", "created_at", "updated_at", "mining_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coin_name", "Algorand"], ["acronym", "ALGO"], ["url_image", "https://crypto.com/price/_next/image.png?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2Falgorand%2Fcolor_icon.png&w=48&q=75"], ["created_at", "2021-12-10 12:37:33.885750"], ["updated_at", "2021-12-10 12:37:33.885750"], ["mining_id", 1]]
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dev.rake:59:in `block (4 levels) in <main>'
+Started DELETE "/coins/1" for 127.0.0.1 at 2021-12-10 09:37:43 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mCoin Load (3.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (2.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mCoin Destroy (1.3ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/coins_controller.rb:55:in `destroy'
+Redirected to http://127.0.0.1:3000/coins
+Completed 302 Found in 120ms (ActiveRecord: 30.0ms | Allocations: 18782)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:37:43 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3569)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 1.3ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 25070)
+Completed 200 OK in 71ms (Views: 62.9ms | ActiveRecord: 3.1ms | Allocations: 27976)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:37:48 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (2.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 10602)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 2.0ms | Allocations: 11658)
+
+
+Started GET "/minings/1/edit" for 127.0.0.1 at 2021-12-10 09:38:00 -0300
+Processing by MiningsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/edit.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 3.2ms | Allocations: 1362)
+  Rendered minings/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1850)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 10561)
+Completed 200 OK in 26ms (Views: 19.5ms | ActiveRecord: 1.2ms | Allocations: 11937)
+
+
+Started PATCH "/minings/1" for 127.0.0.1 at 2021-12-10 09:38:05 -0300
+Processing by MiningsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "mining"=>{"description"=>"Proof of Work", "acronym"=>""}, "commit"=>"save", "id"=>"1"}
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/minings_controller.rb:41:in `block in update'
+  [1m[36mMining Update (1.7ms)[0m  [1m[33mUPDATE "minings" SET "acronym" = $1, "updated_at" = $2 WHERE "minings"."id" = $3[0m  [["acronym", ""], ["updated_at", "2021-12-10 12:38:05.986814"], ["id", 1]]
+  ↳ app/controllers/minings_controller.rb:41:in `block in update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/minings_controller.rb:41:in `block in update'
+Redirected to http://127.0.0.1:3000/minings/1
+Completed 302 Found in 20ms (ActiveRecord: 6.2ms | Allocations: 3655)
+
+
+Started GET "/minings/1" for 127.0.0.1 at 2021-12-10 09:38:06 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 354)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 9075)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 1.6ms | Allocations: 10362)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:38:07 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1495)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 10205)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 1.7ms | Allocations: 10654)
+
+
+Started GET "/minings/new" for 127.0.0.1 at 2021-12-10 09:38:09 -0300
+Processing by MiningsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/new.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 3.3ms | Allocations: 618)
+  Rendered minings/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 9612)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 10211)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:38:10 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 11583)
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 2.2ms | Allocations: 12761)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2021-12-10 09:38:13 -0300
+Processing by CoinsController#new as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 11.0ms | Allocations: 3592)
+  Rendered coins/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4004)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 12619)
+Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 1.3ms | Allocations: 13944)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2021-12-10 09:38:15 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 9361)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 10498)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:38:16 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 11584)
+Completed 200 OK in 36ms (Views: 27.0ms | ActiveRecord: 3.4ms | Allocations: 13117)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2021-12-10 09:38:17 -0300
+Processing by CoinsController#new as HTML
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.4ms | Allocations: 711)
+  Rendered coins/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 9668)
+Completed 200 OK in 30ms (Views: 22.0ms | ActiveRecord: 2.1ms | Allocations: 10951)
+
+
+Started POST "/coins" for 127.0.0.1 at 2021-12-10 09:38:19 -0300
+Processing by CoinsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"coin_name"=>"", "acronym"=>"", "url_image"=>"", "mining_id"=>""}, "commit"=>"salvar"}
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.3ms | Allocations: 1661)
+  Rendered coins/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1776)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1858)
+Redirected to http://127.0.0.1:3000/coins/new
+Completed 302 Found in 13ms (ActiveRecord: 1.3ms | Allocations: 3840)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2021-12-10 09:38:19 -0300
+Processing by CoinsController#new as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 4.0ms | Allocations: 677)
+  Rendered coins/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 9536)
+Completed 200 OK in 29ms (Views: 21.5ms | ActiveRecord: 2.3ms | Allocations: 10722)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:38:33 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2859)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 11568)
+Completed 200 OK in 33ms (Views: 23.4ms | ActiveRecord: 3.7ms | Allocations: 12743)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:38:35 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (2.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1508)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 10226)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 2.9ms | Allocations: 11031)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:37 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8869)
+Completed 200 OK in 41ms (Views: 18.4ms | ActiveRecord: 1.2ms | Allocations: 10134)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:40 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (2.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 8867)
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 2.1ms | Allocations: 10017)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:41 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8867)
+Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 1.3ms | Allocations: 10017)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:41 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 8867)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 1.5ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:42 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8867)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 1.6ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:38:42 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8867)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 1.9ms | Allocations: 10017)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:38:43 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (2.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1498)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 10207)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 2.5ms | Allocations: 10655)
+
+
+Started DELETE "/minings/1" for 127.0.0.1 at 2021-12-10 09:38:48 -0300
+Processing by MiningsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Load (1.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."mining_id" = $1[0m  [["mining_id", 1]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Destroy (1.2ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Destroy (1.1ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Destroy (1.2ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mCoin Destroy (2.7ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mMining Destroy (2.5ms)[0m  [1m[31mDELETE FROM "minings" WHERE "minings"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/minings_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/minings
+Completed 302 Found in 48ms (ActiveRecord: 15.4ms | Allocations: 10728)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:38:48 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 10045)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.7ms | Allocations: 10495)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:39:01 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 10577)
+Completed 200 OK in 32ms (Views: 22.6ms | ActiveRecord: 4.3ms | Allocations: 11750)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 09:39:04 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:65:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 444)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9157)
+Completed 200 OK in 34ms (Views: 15.3ms | ActiveRecord: 5.6ms | Allocations: 12148)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 09:39:12 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:70:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 10580)
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 2.9ms | Allocations: 11752)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 09:39:13 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (2.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 10055)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 2.8ms | Allocations: 10504)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 09:39:15 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8868)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 1.0ms | Allocations: 10017)
+
+
+  [1m[36mCoin Load (0.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins" ORDER BY "coins"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mMining Load (0.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" ORDER BY "coins"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMining Load (0.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" ORDER BY "minings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMining Load (0.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" ORDER BY "minings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2021-12-10 10:32:54 -0300
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2392)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 90.2ms | Allocations: 25198)
+Completed 200 OK in 114ms (Views: 94.1ms | ActiveRecord: 0.0ms | Allocations: 28091)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-10 10:33:50 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 224)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 8956)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9386)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 10:33:51 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 6737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 15414)
+Completed 200 OK in 52ms (Views: 27.6ms | ActiveRecord: 16.2ms | Allocations: 19039)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 10:33:53 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (0.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 9112)
+Completed 200 OK in 42ms (Views: 13.0ms | ActiveRecord: 9.5ms | Allocations: 16780)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 10:33:54 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.7ms | Allocations: 1667)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 10865)
+Completed 200 OK in 34ms (Views: 18.2ms | ActiveRecord: 4.8ms | Allocations: 13879)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 10:33:57 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 10579)
+Completed 200 OK in 33ms (Views: 24.2ms | ActiveRecord: 4.4ms | Allocations: 11765)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 10:33:58 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1705)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 10418)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 1.9ms | Allocations: 11456)
+
+
+Started GET "/minings/2/edit" for 127.0.0.1 at 2021-12-10 10:33:59 -0300
+Processing by MiningsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/edit.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 22.3ms | Allocations: 941)
+  Rendered minings/edit.html.erb within layouts/application (Duration: 24.8ms | Allocations: 1412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 10123)
+Completed 200 OK in 47ms (Views: 38.5ms | ActiveRecord: 1.9ms | Allocations: 11492)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:02 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 9072)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 1.2ms | Allocations: 10347)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:03 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8867)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 1.2ms | Allocations: 10017)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:03 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (2.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8867)
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 2.2ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:34 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 220)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 9834)
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 1.5ms | Allocations: 11722)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:35 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.4ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8880)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 1.4ms | Allocations: 10030)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:36 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8867)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 1.1ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:37 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (0.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8867)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.7ms | Allocations: 10010)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:38 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 8867)
+Completed 200 OK in 35ms (Views: 28.1ms | ActiveRecord: 1.9ms | Allocations: 10018)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 10:34:43 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 10966)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 2.4ms | Allocations: 12667)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 10:34:45 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 10382)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 1.3ms | Allocations: 10956)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:47 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8868)
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 1.8ms | Allocations: 10019)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:48 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8867)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 1.9ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:48 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 8867)
+Completed 200 OK in 21ms (Views: 14.0ms | ActiveRecord: 1.8ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:34:49 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (2.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8867)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 2.0ms | Allocations: 10016)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:35:01 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 1.3ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 24595)
+Completed 200 OK in 120ms (Views: 78.7ms | ActiveRecord: 11.3ms | Allocations: 33616)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:35:02 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (0.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8882)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.8ms | Allocations: 10050)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:35:03 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8869)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 1.3ms | Allocations: 10035)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 10:35:03 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 10453)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 1.2ms | Allocations: 11042)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:35:05 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.5ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8868)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 1.5ms | Allocations: 10018)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 10:35:05 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8869)
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 1.9ms | Allocations: 10034)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:26 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8867)
+Completed 200 OK in 47ms (Views: 13.2ms | ActiveRecord: 20.1ms | Allocations: 14233)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:28 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8867)
+Completed 200 OK in 27ms (Views: 21.3ms | ActiveRecord: 1.7ms | Allocations: 10016)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 11:09:29 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (0.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 10043)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.9ms | Allocations: 10494)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-10 11:09:49 -0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2392)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 25203)
+Completed 200 OK in 123ms (Views: 103.3ms | ActiveRecord: 0.0ms | Allocations: 28096)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 11:09:50 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 6737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 15451)
+Completed 200 OK in 51ms (Views: 26.8ms | ActiveRecord: 15.2ms | Allocations: 19077)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 11:09:52 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 12812)
+Completed 200 OK in 40ms (Views: 32.2ms | ActiveRecord: 6.2ms | Allocations: 13860)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:53 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 9076)
+Completed 200 OK in 22ms (Views: 12.1ms | ActiveRecord: 3.2ms | Allocations: 10965)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:54 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8867)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 1.3ms | Allocations: 10017)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:55 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (2.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8869)
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 2.3ms | Allocations: 10034)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:09:55 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 8867)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 1.8ms | Allocations: 10017)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:10:56 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (2.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 224)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 9856)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 2.0ms | Allocations: 11743)
+
+
+Started GET "/minings/2/edit" for 127.0.0.1 at 2021-12-10 11:10:58 -0300
+Processing by MiningsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/edit.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 7.7ms | Allocations: 3764)
+  Rendered minings/edit.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 12857)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 1.0ms | Allocations: 14137)
+
+
+Started GET "/minings/2" for 127.0.0.1 at 2021-12-10 11:10:59 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMining Load (1.3ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 8885)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 1.3ms | Allocations: 10035)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 11:11:00 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 10382)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 1.6ms | Allocations: 10961)
+
+
+Started GET "/minings/3" for 127.0.0.1 at 2021-12-10 11:11:01 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMining Load (2.1ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 8885)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 2.1ms | Allocations: 10035)
+
+
+Started GET "/minings/3/edit" for 127.0.0.1 at 2021-12-10 11:11:02 -0300
+Processing by MiningsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/edit.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 1.9ms | Allocations: 641)
+  Rendered minings/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9539)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 1.8ms | Allocations: 10688)
+
+
+Started GET "/minings/3" for 127.0.0.1 at 2021-12-10 11:11:03 -0300
+Processing by MiningsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/show.html.erb within layouts/application
+  Rendered minings/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 8884)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 1.6ms | Allocations: 10033)
+
+
+Started GET "/minings/3/edit" for 127.0.0.1 at 2021-12-10 11:11:04 -0300
+Processing by MiningsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMining Load (1.6ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/minings_controller.rb:65:in `set_mining'
+  Rendering layout layouts/application.html.erb
+  Rendering minings/edit.html.erb within layouts/application
+  Rendered minings/_form.html.erb (Duration: 1.6ms | Allocations: 639)
+  Rendered minings/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 9537)
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 1.6ms | Allocations: 10686)
+
+
+Started GET "/minings" for 127.0.0.1 at 2021-12-10 11:11:04 -0300
+Processing by MiningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering minings/index.html.erb within layouts/application
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings"[0m
+  ↳ app/views/minings/index.html.erb:17
+  Rendered minings/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 10041)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 1.8ms | Allocations: 10489)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 11:11:07 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 2248)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 10962)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 2.8ms | Allocations: 12658)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 11:11:08 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (0.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 9104)
+Completed 200 OK in 29ms (Views: 12.8ms | ActiveRecord: 4.2ms | Allocations: 13923)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:09 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (1.8ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.1ms | Allocations: 1244)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1733)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 10442)
+Completed 200 OK in 28ms (Views: 14.3ms | ActiveRecord: 4.2ms | Allocations: 13430)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:10 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (2.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.7ms | Allocations: 699)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9614)
+Completed 200 OK in 35ms (Views: 17.5ms | ActiveRecord: 6.2ms | Allocations: 12480)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:11 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (0.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 1.9ms | Allocations: 699)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9614)
+Completed 200 OK in 28ms (Views: 16.4ms | ActiveRecord: 3.4ms | Allocations: 12478)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:22 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (2.2ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.1ms | Allocations: 1070)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1544)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 11028)
+Completed 200 OK in 39ms (Views: 21.1ms | ActiveRecord: 5.3ms | Allocations: 14636)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 11:11:22 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (1.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 9142)
+Completed 200 OK in 30ms (Views: 16.0ms | ActiveRecord: 4.1ms | Allocations: 12136)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:24 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (1.7ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 1.9ms | Allocations: 702)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 9602)
+Completed 200 OK in 44ms (Views: 29.2ms | ActiveRecord: 4.8ms | Allocations: 12468)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 11:11:25 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (0.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 8899)
+Completed 200 OK in 25ms (Views: 16.2ms | ActiveRecord: 2.9ms | Allocations: 11765)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2021-12-10 11:11:26 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (2.0ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.1ms | Allocations: 699)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 9597)
+Completed 200 OK in 32ms (Views: 14.7ms | ActiveRecord: 6.0ms | Allocations: 12461)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2021-12-10 11:11:26 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (1.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:66:in `set_coin'
+  [1m[36mCACHE Coin Load (0.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[36mMining Load (0.9ms)[0m  [1m[34mSELECT "minings".* FROM "minings" WHERE "minings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67:in `set_coin'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8899)
+Completed 200 OK in 26ms (Views: 15.6ms | ActiveRecord: 3.1ms | Allocations: 11762)
+
+
+Started GET "/coins" for 127.0.0.1 at 2021-12-10 11:11:27 -0300
+Processing by CoinsController#index as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "minings"."description", "minings"."id" FROM "minings"[0m
+  ↳ app/controllers/coins_controller.rb:71:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 10965)
+Completed 200 OK in 28ms (Views: 18.5ms | ActiveRecord: 3.4ms | Allocations: 12267)
+
+

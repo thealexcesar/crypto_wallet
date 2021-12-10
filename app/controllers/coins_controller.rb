@@ -17,6 +17,7 @@ class CoinsController < ApplicationController
 
   # GET /coins/1/edit
   def edit
+
   end
 
   # POST /coins or /coins.json
