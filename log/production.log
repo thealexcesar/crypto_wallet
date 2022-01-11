@@ -354,3 +354,24 @@ I, [2021-12-09T17:42:53.286763 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf
 I, [2021-12-09T17:42:53.302244 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023]   Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 676)
 I, [2021-12-09T17:42:53.307745 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023]   Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2306)
 I, [2021-12-09T17:42:53.308719 #125061]  INFO -- : [71d4e2f6-7638-4de8-a3a2-a2cf3aa1f023] Completed 200 OK in 22ms (Views: 12.3ms | Allocations: 3739)
+I, [2021-12-22T10:03:49.375514 #9016]  INFO -- : [5422d5e8-0416-4969-9229-28951be29861] Started GET "/" for 127.0.0.1 at 2021-12-22 10:03:49 -0300
+I, [2021-12-22T10:03:49.380259 #9016]  INFO -- : [5422d5e8-0416-4969-9229-28951be29861] Processing by HomeController#index as HTML
+I, [2021-12-22T10:03:49.395669 #9016]  INFO -- : [5422d5e8-0416-4969-9229-28951be29861]   Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 658)
+I, [2021-12-22T10:03:49.404385 #9016]  INFO -- : [5422d5e8-0416-4969-9229-28951be29861]   Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2280)
+I, [2021-12-22T10:03:49.404832 #9016]  INFO -- : [5422d5e8-0416-4969-9229-28951be29861] Completed 200 OK in 24ms (Views: 17.9ms | Allocations: 3592)
+I, [2021-12-22T10:03:49.454438 #9016]  INFO -- : [f5ce0911-4eb7-4abe-bced-0a6e40005718] Started GET "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css" for 127.0.0.1 at 2021-12-22 10:03:49 -0300
+F, [2021-12-22T10:03:49.455091 #9016] FATAL -- : [f5ce0911-4eb7-4abe-bced-0a6e40005718]   
+[f5ce0911-4eb7-4abe-bced-0a6e40005718] ActionController::RoutingError (No route matches [GET] "/assets/application-9be6eb0cdbf24f53c944fe797c1ae9446bf1f54fcb1f3b4e378354029266df48.css"):
+[f5ce0911-4eb7-4abe-bced-0a6e40005718]   
+I, [2021-12-22T10:03:49.463290 #9016]  INFO -- : [44ffbf94-e83e-4897-92f6-3cfb71eea284] Started GET "/packs/js/application-745cd038725bcaac9539.js" for 127.0.0.1 at 2021-12-22 10:03:49 -0300
+F, [2021-12-22T10:03:49.463843 #9016] FATAL -- : [44ffbf94-e83e-4897-92f6-3cfb71eea284]   
+[44ffbf94-e83e-4897-92f6-3cfb71eea284] ActionController::RoutingError (No route matches [GET] "/packs/js/application-745cd038725bcaac9539.js"):
+[44ffbf94-e83e-4897-92f6-3cfb71eea284]   
+I, [2021-12-22T10:03:49.521218 #9016]  INFO -- : [f04cde71-6327-4c17-8b90-a15f02573992] Started GET "/assets/coins-solid-344e32fabc85bd788185c6a229c30257c74dc9afd7da09898c5e905397443cf0.svg" for 127.0.0.1 at 2021-12-22 10:03:49 -0300
+F, [2021-12-22T10:03:49.522108 #9016] FATAL -- : [f04cde71-6327-4c17-8b90-a15f02573992]   
+[f04cde71-6327-4c17-8b90-a15f02573992] ActionController::RoutingError (No route matches [GET] "/assets/coins-solid-344e32fabc85bd788185c6a229c30257c74dc9afd7da09898c5e905397443cf0.svg"):
+[f04cde71-6327-4c17-8b90-a15f02573992]   
+I, [2021-12-22T10:03:49.603075 #9016]  INFO -- : [07eeb2b3-182e-4c02-9138-7682809b1fcf] Started GET "/assets/hive-brands-49bf7d36db6806a1de62960fde9ca8ea14bfb847e2cb1014923fbeed35fd1a00.svg" for 127.0.0.1 at 2021-12-22 10:03:49 -0300
+F, [2021-12-22T10:03:49.603904 #9016] FATAL -- : [07eeb2b3-182e-4c02-9138-7682809b1fcf]   
+[07eeb2b3-182e-4c02-9138-7682809b1fcf] ActionController::RoutingError (No route matches [GET] "/assets/hive-brands-49bf7d36db6806a1de62960fde9ca8ea14bfb847e2cb1014923fbeed35fd1a00.svg"):
+[07eeb2b3-182e-4c02-9138-7682809b1fcf]   
